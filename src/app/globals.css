@@ -285,14 +285,16 @@ main section[id] { scroll-margin-top: var(--header-offset); }
 .process-list p { max-width: 12rem; margin-bottom: 0; color: var(--muted); font-size: 0.9rem; }
 
 /* Insights */
-.insights { background: var(--surface-muted); }
-.insights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(2rem, 4vw, 3.5rem); }
-.insights-grid article { min-height: 16rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.insights { padding-block: clamp(3.5rem, 5vw, 5.5rem); background: var(--surface-muted); }
+.insights .section-heading { margin-bottom: clamp(1.75rem, 3vw, 2.5rem); }
+.insights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 3vw, 2.5rem); }
+.insights-grid article { min-height: 12.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
 .insights-grid article:first-child { padding-left: 0; }
 .insights-grid article:last-child { padding-right: 0; }
-.insights-card__meta { margin-bottom: 2.25rem; display: flex; justify-content: space-between; gap: 1rem; color: var(--accent); font-size: 0.65rem; font-weight: 750; letter-spacing: 0.12em; text-transform: uppercase; }
-.insights-grid h3 { margin-bottom: 1rem; color: var(--primary-deep); font-family: var(--font-editorial); font-size: clamp(1.45rem, 2.2vw, 1.9rem); font-weight: 500; line-height: 1.18; }
-.insights-grid article > p { margin-bottom: 1.5rem; color: var(--muted); font-size: 0.94rem; }
+.insights-card__meta { margin-bottom: 1.25rem; display: flex; justify-content: space-between; gap: 1rem; color: var(--accent); font-size: 0.65rem; font-weight: 750; letter-spacing: 0.12em; text-transform: uppercase; }
+.insights-grid h3 { margin-bottom: 0.65rem; color: var(--primary-deep); font-family: var(--font-editorial); font-size: clamp(1.45rem, 2.2vw, 1.9rem); font-weight: 500; line-height: 1.18; }
+.insights-grid article > p { margin-bottom: 0; color: var(--muted); font-size: 0.94rem; }
+.insights .section-detail-link { margin-top: 1.5rem; }
 
 /* Secondary pages */
 .page-hero { background: var(--primary-deep); color: var(--primary-foreground); }
@@ -346,17 +348,19 @@ main section[id] { scroll-margin-top: var(--header-offset); }
 
 .approach-index > .container > ol > li { padding-block: clamp(2.5rem, 4vw, 4rem); display: grid; grid-template-columns: 4rem minmax(15rem, 0.6fr) minmax(20rem, 1fr); gap: clamp(2rem, 4vw, 4rem); align-items: start; border-bottom: 1px solid var(--border); }
 .limitation-note { max-width: 55rem; margin: 2.5rem 0 0; padding-left: 1.2rem; border-left: 2px solid var(--accent); color: var(--muted); font-size: 0.9rem; }
-.planned-insights__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(2rem, 4vw, 3.5rem); }
-.planned-insights article { min-height: 18rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
-.planned-insights__meta { margin-bottom: 2.5rem; display: flex; justify-content: space-between; gap: 1rem; color: var(--accent); font-size: 0.66rem; font-weight: 750; letter-spacing: 0.12em; text-transform: uppercase; }
+.planned-insights__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 2.5rem); }
+.planned-insights article { min-height: 13.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.planned-insights__meta { margin-bottom: 1.5rem; display: flex; justify-content: space-between; gap: 1rem; color: var(--accent); font-size: 0.66rem; font-weight: 750; letter-spacing: 0.12em; text-transform: uppercase; }
 .planned-insights h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
-.planned-insights article > p { color: var(--muted); }
-.prompt-list { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 3rem; }
-.prompt-list div { min-height: 7.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
-.prompt-list dt { margin-bottom: 0.8rem; color: var(--primary-deep); font-family: var(--font-editorial); font-size: 1.35rem; }
+.planned-insights article > p { margin-bottom: 0; color: var(--muted); }
+.contact-page .page-section { padding-block: clamp(3.25rem, 5vw, 5rem); }
+.contact-page .page-section-heading { margin-bottom: clamp(1.75rem, 3vw, 2.5rem); }
+.prompt-list { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2.5rem; }
+.prompt-list div { min-height: 6rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.prompt-list dt { margin-bottom: 0.4rem; color: var(--primary-deep); font-family: var(--font-editorial); font-size: 1.35rem; line-height: 1.3; }
 .prompt-list dt span { margin-right: 1.2rem; color: var(--accent); font-family: var(--font-sans); font-size: 0.65rem; font-weight: 750; letter-spacing: 0.1em; }
-.prompt-list dd { margin: 0; color: var(--muted); }
-.privacy-note { max-width: 52rem; margin: 2.5rem 0 0; padding-left: 1.2rem; border-left: 2px solid var(--accent); color: var(--muted); font-size: 0.9rem; }
+.prompt-list dd { margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
+.privacy-note { max-width: 52rem; margin: 1.75rem 0 0; padding-left: 1.2rem; border-left: 2px solid var(--accent); color: var(--muted); font-size: 0.9rem; }
 .page-cta { padding-block: clamp(4rem, 6vw, 5.5rem); background: var(--primary); color: var(--primary-foreground); }
 .page-cta__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.55fr); align-items: end; gap: clamp(3rem, 8vw, 8rem); }
 .page-cta h2 { margin-bottom: 0; color: var(--primary-foreground); }
@@ -457,7 +461,7 @@ main section[id] { scroll-margin-top: var(--header-offset); }
   .process-list h3, .process-list p { grid-column: 2; max-width: none; }
   .insights-grid { grid-template-columns: 1fr; }
   .insights-grid article { min-height: auto; }
-  .insights-card__meta { margin-bottom: 2rem; }
+  .insights-card__meta { margin-bottom: 1.25rem; }
   .page-hero__grid { min-height: 22rem; padding-block: 3.5rem; }
   .page-hero h1 { font-size: clamp(2.7rem, 12vw, 3.75rem); }
   .page-section h2, .service-index h2, .approach-index h2, .planned-insights h2, .page-cta h2 { font-size: clamp(2.05rem, 9.5vw, 2.8rem); }
