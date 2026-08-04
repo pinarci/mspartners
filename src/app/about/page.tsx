@@ -63,19 +63,6 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="page-section page-section--warm" aria-labelledby="background-title">
-        <Container className="placeholder-panel">
-          <div>
-            <p className="eyebrow">{content.background.eyebrow}</p>
-            <h2 id="background-title">{content.background.title}</h2>
-          </div>
-          <div>
-            <p>{content.background.body}</p>
-            <p className="page-status"><span aria-hidden="true" />{content.background.status}</p>
-          </div>
-        </Container>
-      </section>
-
       <PageCta content={content.cta} />
     </article>
   );

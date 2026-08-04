@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { PageCta } from "@/components/pages/page-cta";
 import { PageHero } from "@/components/pages/page-hero";
 import { Container } from "@/components/ui/container";
 import { pageMetadata } from "@/config/site";
@@ -18,16 +17,13 @@ export default function ContactPage() {
     <article className="detail-page contact-page">
       <PageHero content={content.hero} />
 
-      <section className="page-section page-section--warm" aria-labelledby="contact-status-title">
-        <Container className="placeholder-panel">
+      <section className="page-section page-section--warm contact-notice-section" aria-labelledby="contact-status-title">
+        <Container className="contact-notice">
           <div>
             <p className="eyebrow">{content.status.eyebrow}</p>
             <h2 id="contact-status-title">{content.status.title}</h2>
           </div>
-          <div>
-            <p>{content.status.body}</p>
-            <p className="page-status"><span aria-hidden="true" />{content.status.label}</p>
-          </div>
+          <p>{content.status.body}</p>
         </Container>
       </section>
 
@@ -49,8 +45,6 @@ export default function ContactPage() {
           <p className="privacy-note">{content.privacyNote}</p>
         </Container>
       </section>
-
-      <PageCta content={content.cta} />
     </article>
   );
 }

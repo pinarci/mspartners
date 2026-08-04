@@ -14,7 +14,6 @@ export function ContactCtaSection() {
         <div className="contact-cta__copy">
           <p>{content.description}</p>
           <Link className="contact-cta__action" href={content.actionHref}>{content.actionLabel}<span aria-hidden="true">→</span></Link>
-          <p className="contact-placeholder" id="contact-note"><span aria-hidden="true" />{content.actionNote}</p>
         </div>
       </Container>
     </section>

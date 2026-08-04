@@ -16,7 +16,6 @@ export function ServicesSection() {
               <p className="service-card__number">{String(index + 1).padStart(2, "0")}</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <span className="status-label">Provisional</span>
             </article>
           ))}
         </div>

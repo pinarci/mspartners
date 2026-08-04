@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { company, temporaryWordmark } from "@/config/brand";
-import { headerAction, primaryNavigation } from "@/config/navigation";
+import { primaryNavigation } from "@/config/navigation";
 
 interface MobileNavigationProps {
   activePath: string;
@@ -90,9 +90,6 @@ export function MobileNavigation({ activePath }: MobileNavigationProps) {
                 })}
               </ul>
             </nav>
-            <Link className="mobile-menu__cta" href={headerAction.href} onClick={() => closeMenu()}>
-              {headerAction.label}<span aria-hidden="true">→</span>
-            </Link>
             <p className="mobile-menu__tagline">{company.tagline}</p>
           </div>
         </div>

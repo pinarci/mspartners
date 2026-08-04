@@ -8,38 +8,32 @@ const englishHome = {
     description:
       "Independent local insight, commercial risk assessment and advisory support for international companies operating across Türkiye and the United States.",
     primaryAction: { label: "Explore Our Services", href: "#services" },
-    secondaryAction: { label: "Discuss Your Needs", href: "/contact" },
-    visual: {
-      label: "Independent review framework",
-      stages: ["Scope", "Verify", "Assess", "Report"],
-      note: "Structured local insight for cross-border decisions",
-    },
   },
   introduction: {
     eyebrow: "Cross-Border Perspective",
     title: "Local insight for decisions that cannot rely on assumptions.",
     body: [
       "International companies need dependable local information when assessing suppliers, business partners, investments and contractual performance in Türkiye.",
-      "MS Partners is being established to provide an independent perspective through structured review, direct local insight and clear reporting for consequential cross-border decisions.",
+      "MS Partners brings structured review, direct local insight and clear reporting to consequential cross-border decisions.",
     ],
     principle: "Evidence before assumption. Context before conclusion.",
     action: { label: "Learn About MS Partners", href: "/about" },
   },
   services: {
-    eyebrow: "Provisional Service Scope",
+    eyebrow: "Services & Expertise",
     title: "Focused advisory for complex commercial questions.",
-    description: "A proposed set of independent review and advisory capabilities for organizations operating across Türkiye and international markets.",
+    description: "Independent review and advisory support for organizations operating across Türkiye and international markets.",
     action: { label: "Explore All Services", href: "/services" },
   },
   differentiators: {
     eyebrow: "Why MS Partners",
     title: "Serious questions deserve an independent point of view.",
-    description: "Our proposed working principles are designed for sensitive decisions where context, discretion and clarity matter.",
+    description: "Working principles designed for sensitive decisions where context, discretion and clarity matter.",
   },
   process: {
     eyebrow: "Working Approach",
     title: "A disciplined path from question to action.",
-    description: "A provisional five-step structure that keeps each engagement focused, proportionate and useful.",
+    description: "A five-step structure that keeps each engagement focused, proportionate and useful.",
     action: { label: "View Our Approach", href: "/approach" },
   },
   insights: {
@@ -54,18 +48,11 @@ const englishHome = {
     description: "Discuss your objectives, concerns and information needs with our team.",
     actionLabel: "Contact Our Team",
     actionHref: "/contact",
-    actionNote: "Contact details pending confirmation",
   },
   footer: {
     description: "Independent risk management, audit and business advisory support for international organizations with interests in Türkiye.",
-    servicesLabel: "Provisional services",
-    affiliatedLabel: "Affiliated websites",
-    affiliatedPlaceholder: "To be confirmed",
-    legalLabel: "Legal and privacy information",
-    privacyPlaceholder: "Privacy information pending",
-    legalPlaceholder: "Legal information pending",
-    contactLabel: "Contact information",
-    contactPlaceholder: "Details pending client confirmation",
+    servicesLinkLabel: "Services & Expertise",
+    previewNotice: "Concept preview — Content and company details remain subject to final approval.",
   },
 } as const;
 

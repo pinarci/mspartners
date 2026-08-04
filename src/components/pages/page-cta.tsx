@@ -21,7 +21,6 @@ export function PageCta({ content }: PageCtaProps) {
               {content.action.label}<span aria-hidden="true">→</span>
             </Link>
           ) : null}
-          {content.status ? <p className="page-status"><span aria-hidden="true" />{content.status}</p> : null}
         </div>
       </Container>
     </section>

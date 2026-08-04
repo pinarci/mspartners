@@ -39,11 +39,9 @@ export default function InsightsPage() {
                 </div>
                 <h2>{insight.title}</h2>
                 <p>{insight.summary}</p>
-                <p className="planned-insights__state">Editorial concept · Not yet published</p>
               </article>
             ))}
           </div>
-          <p className="limitation-note">{content.plannedState}</p>
         </Container>
       </section>
 

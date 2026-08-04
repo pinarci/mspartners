@@ -3,7 +3,6 @@ import { Container } from "@/components/ui/container";
 import { company } from "@/config/brand";
 import { primaryNavigation } from "@/config/navigation";
 import { homeContent } from "@/content/home";
-import { services } from "@/content/services";
 
 export function Footer() {
   const content = homeContent.en.footer;
@@ -13,7 +12,6 @@ export function Footer() {
         <div className="site-footer__top">
           <div className="site-footer__identity">
             <p className="footer-wordmark">{company.name}</p>
-            <p className="site-footer__tagline">{company.tagline}</p>
             <p className="site-footer__description">{content.description}</p>
           </div>
           <nav className="site-footer__column" aria-label="Footer navigation">
@@ -23,20 +21,15 @@ export function Footer() {
             </ul>
           </nav>
           <div className="site-footer__column">
-            <p className="footer-label">{content.servicesLabel}</p>
+            <p className="footer-label">Services</p>
             <ul className="footer-services">
-              {services.slice(0, 4).map((service) => <li key={service.id}><Link href="/services">{service.title}</Link></li>)}
+              <li><Link href="/services">{content.servicesLinkLabel}</Link></li>
             </ul>
-          </div>
-          <div className="site-footer__column site-footer__placeholders">
-            <div><p className="footer-label">{content.affiliatedLabel}</p><p>{content.affiliatedPlaceholder}</p></div>
-            <div><p className="footer-label">{content.legalLabel}</p><p>{content.privacyPlaceholder}<br />{content.legalPlaceholder}</p></div>
-            <div><p className="footer-label">{content.contactLabel}</p><p>{content.contactPlaceholder}</p></div>
           </div>
         </div>
         <div className="site-footer__bottom">
-          <p>© {new Date().getFullYear()} {company.name} · Provisional identity</p>
-          <p>Final legal, privacy and contact information pending client approval.</p>
+          <p>© {new Date().getFullYear()} {company.name}</p>
+          <p>{content.previewNotice}</p>
         </div>
       </Container>
     </footer>
