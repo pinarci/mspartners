@@ -1,50 +1,37 @@
 import { company } from "@/config/brand";
-import type { LinkPlaceholder } from "@/types/content";
+import type { ContactStatus } from "@/types/content";
 
-// TODO: Replace all metadata after company positioning is confirmed.
 export const siteMetadata = {
-  title: `${company.name} | ${company.tagline}`,
+  title: `${company.name} | ${company.slogan.replace(/\.$/, "")}`,
   titleTemplate: `%s | ${company.name}`,
-  description:
-    "Independent cross-border risk management, audit and business advisory support involving Türkiye.",
-  status: "provisional",
+  description: "Independent cross-border advisory support for U.S. and international companies operating across Türkiye, Europe and Asia.",
 } as const;
 
-// TODO: Review all route metadata after client approval of positioning and services.
 export const pageMetadata = {
   home: {
-    title: "Clarity and Confidence for Business in Türkiye",
+    title: `${company.name} | ${company.slogan.replace(/\.$/, "")}`,
     description: siteMetadata.description,
   },
   about: {
     title: "About Us",
-    description: "An overview of MS Partners, its cross-border purpose and professional principles.",
+    description: "Learn about MS Partners, its Washington State base, Ankara affiliate and independent cross-border advisory positioning.",
   },
   services: {
-    title: "Services & Expertise",
-    description: "Risk management, verification and cross-border advisory service areas involving Türkiye.",
+    title: "Services",
+    description: "Broad areas of cross-border advisory support, with detailed scopes and deliverables defined for each engagement.",
   },
   approach: {
-    title: "Our Approach",
-    description: "An engagement framework for focused local review, analysis, reporting and strategic guidance.",
-  },
-  insights: {
-    title: "Insights",
-    description: "Planned commentary and practical analysis for international organizations doing business in Türkiye.",
+    title: "How We Work",
+    description: "A flexible engagement process for scope definition, local review, analysis, reporting and practical recommendations.",
   },
   contact: {
     title: "Contact",
-    description: "Prepare for a future conversation with MS Partners about cross-border business objectives and information needs.",
+    description: "Prepare for a conversation with MS Partners about cross-border business objectives and information needs.",
   },
 } as const;
 
-// TODO: Add verified details only after client confirmation.
-export const contactPlaceholders = {
-  email: null,
-  phone: null,
-  address: null,
-  status: "provisional",
-} as const;
-
-export const affiliatedWebsites: LinkPlaceholder[] = [];
-export const socialMediaLinks: LinkPlaceholder[] = [];
+// TODO: Replace this notice when the official corporate contact channel is confirmed.
+export const contactStatus = {
+  officialChannelConfirmed: false,
+  notice: "The official corporate contact channel will be added following confirmation.",
+} satisfies ContactStatus;

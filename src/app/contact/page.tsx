@@ -42,7 +42,6 @@ export default function ContactPage() {
               </div>
             ))}
           </dl>
-          <p className="privacy-note">{content.privacyNote}</p>
         </Container>
       </section>
     </article>

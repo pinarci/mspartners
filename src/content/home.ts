@@ -3,56 +3,48 @@ import type { DifferentiatorItem, LocalizedContent } from "@/types/content";
 
 const englishHome = {
   hero: {
-    eyebrow: company.tagline,
-    title: "Clarity and Confidence for Business in Türkiye",
-    description:
-      "Independent local insight, commercial risk assessment and advisory support for international companies operating across Türkiye and the United States.",
-    primaryAction: { label: "Explore Our Services", href: "#services" },
+    eyebrow: "Independent Cross-Border Advisory",
+    title: company.slogan,
+    description: "Independent local insight and practical advisory support for U.S. and international companies operating across Türkiye, Europe and Asia.",
+    primaryAction: { label: "Explore Our Work", href: "/services" },
+    secondaryAction: { label: "Contact Us", href: "/contact" },
   },
   introduction: {
-    eyebrow: "Cross-Border Perspective",
-    title: "Local insight for decisions that cannot rely on assumptions.",
+    eyebrow: "Washington & Ankara",
+    title: "Independent local execution for cross-border trade.",
     body: [
-      "International companies need dependable local information when assessing suppliers, business partners, investments and contractual performance in Türkiye.",
-      "MS Partners brings structured review, direct local insight and clear reporting to consequential cross-border decisions.",
+      `Based in ${company.geographicPositioning.base}, MS Partners works with its affiliate in ${company.geographicPositioning.affiliate} to support U.S. and international companies across ${company.geographicPositioning.operatingRegions.join(", ")}.`,
+      "Our cross-border advisory work combines commercial focus with local field capability, transparent execution and disciplined reporting.",
     ],
-    principle: "Evidence before assumption. Context before conclusion.",
+    principle: "Independent insight. Practical local execution.",
     action: { label: "Learn About MS Partners", href: "/about" },
   },
   services: {
-    eyebrow: "Services & Expertise",
-    title: "Focused advisory for complex commercial questions.",
-    description: "Independent review and advisory support for organizations operating across Türkiye and international markets.",
-    action: { label: "Explore All Services", href: "/services" },
+    eyebrow: "Areas of Work",
+    title: "Practical support for cross-border operations.",
+    description: "Broad advisory capabilities shaped around each client’s commercial purpose, operating context and agreed scope.",
+    action: { label: "Explore Our Work", href: "/services" },
   },
   differentiators: {
     eyebrow: "Why MS Partners",
-    title: "Serious questions deserve an independent point of view.",
-    description: "Working principles designed for sensitive decisions where context, discretion and clarity matter.",
+    title: "Independent perspective, grounded in local execution.",
+    description: "A commercially focused approach to uncertainty, coordination and decision support across borders.",
   },
   process: {
-    eyebrow: "Working Approach",
-    title: "A disciplined path from question to action.",
-    description: "A five-step structure that keeps each engagement focused, proportionate and useful.",
-    action: { label: "View Our Approach", href: "/approach" },
-  },
-  insights: {
-    eyebrow: "Insights",
-    title: "Perspective for doing business in Türkiye.",
-    description: "A preview of future analysis intended to help international decision-makers ask better questions.",
-    action: { label: "Explore Insights", href: "/insights" },
+    eyebrow: "How We Work",
+    title: "A clear process, adapted to each engagement.",
+    description: "A practical structure for defining the question, coordinating local work and communicating useful findings.",
+    action: { label: "See How We Work", href: "/approach" },
   },
   contact: {
-    eyebrow: "Start with clarity",
-    title: "Make your next decision with better local insight.",
-    description: "Discuss your objectives, concerns and information needs with our team.",
-    actionLabel: "Contact Our Team",
+    eyebrow: "Contact",
+    title: "Start with the commercial question.",
+    description: "Prepare the context, priorities and timeframe for an initial discussion with MS Partners.",
+    actionLabel: "Contact Us",
     actionHref: "/contact",
   },
   footer: {
-    description: "Independent risk management, audit and business advisory support for international organizations with interests in Türkiye.",
-    servicesLinkLabel: "Services & Expertise",
-    previewNotice: "Concept preview — Content and company details remain subject to final approval.",
+    previewNotice: "Concept preview — Company information and content remain subject to final approval.",
   },
 } as const;
 
@@ -60,10 +52,10 @@ const englishHome = {
 export const homeContent: LocalizedContent<typeof englishHome> = { en: englishHome };
 
 export const differentiators: DifferentiatorItem[] = [
-  { id: "independent", title: "Independent Perspective", description: "An objective view centered on the decision and the evidence behind it." },
-  { id: "local", title: "Local Market Understanding", description: "Context informed by the commercial realities of operating in Türkiye." },
-  { id: "confidential", title: "Confidential Engagement", description: "Discreet handling of sensitive questions and a clear line of communication." },
-  { id: "practical", title: "Practical Reporting", description: "Findings structured to be understood, discussed and acted upon." },
-  { id: "cross-border", title: "Cross-Border Communication", description: "Clear communication across different business cultures and expectations." },
-  { id: "judgment", title: "Senior Professional Judgment", description: "A considered approach to questions that cannot be reduced to a checklist." },
+  { id: "independent", title: "Independent Advisory", description: "An objective perspective centered on the client’s commercial purpose and agreed scope." },
+  { id: "local", title: "Local Field Capability", description: "On-the-ground coordination and insight through the Türkiye affiliate in Ankara." },
+  { id: "cross-border", title: "Cross-Border Focus", description: "Support for U.S. and international companies operating across different markets." },
+  { id: "transparent", title: "Transparent Execution", description: "Clear communication about the work performed, information available and relevant limitations." },
+  { id: "reporting", title: "Disciplined Reporting", description: "Material observations organized to support discussion and decision-making." },
+  { id: "commercial", title: "Commercial Practicality", description: "Recommendations framed around operational priorities and practical next steps." },
 ];

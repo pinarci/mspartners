@@ -1,20 +1,20 @@
 import type { CompanyIdentity } from "@/types/content";
 
-// TODO: Replace after client confirmation.
 export const company: CompanyIdentity = {
   name: "MS Partners",
-  tagline: "International Risk Management & Audit",
-  status: "provisional",
+  slogan: "De-Risking Global Supply Chains.",
+  legalEntities: [
+    { name: "MS Partners LLC", location: "Washington State, United States" },
+    { name: "MS Partners Ltd. Şti.", location: "Ankara, Türkiye" },
+  ],
+  geographicPositioning: {
+    base: "Washington State, United States",
+    affiliate: "Ankara, Türkiye",
+    operatingRegions: ["Türkiye", "Europe", "Asia"],
+  },
 };
 
-export const temporaryWordmark = {
+export const wordmark = {
   lead: "MS",
   name: "Partners",
-  status: "provisional",
-} as const;
-
-export const brandAsset = {
-  referencePath: "/brand/brand-reference.jpeg",
-  usage: "reference-only",
-  finalAssetRequired: true,
 } as const;

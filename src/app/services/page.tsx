@@ -37,27 +37,10 @@ export default function ServicesPage() {
                 <div className="service-index__content">
                   <h2>{service.title}</h2>
                   <p className="service-index__summary">{service.description}</p>
-                  <p>{service.detail}</p>
-                </div>
-                <div className="service-index__scope">
-                  <p className="footer-label">Scope may include</p>
-                  <ul>
-                    {service.scope.map((item) => <li key={item}>{item}</li>)}
-                  </ul>
                 </div>
               </li>
             ))}
           </ol>
-        </Container>
-      </section>
-
-      <section className="page-section page-section--muted" aria-labelledby="scope-title">
-        <Container className="page-copy-grid">
-          <div>
-            <p className="eyebrow">{content.scope.eyebrow}</p>
-            <h2 id="scope-title">{content.scope.title}</h2>
-          </div>
-          <p className="page-lede">{content.scope.body}</p>
         </Container>
       </section>
 

@@ -1,30 +1,29 @@
 import type { LocalizedContent, PageHeroContent } from "@/types/content";
+import { contactStatus } from "@/config/site";
 
 const englishContact = {
   hero: {
     eyebrow: "Contact",
-    title: "Prepare for a focused conversation.",
-    summary: "Prepare the essential context for an initial discussion about a relationship, transaction or market question involving Türkiye.",
+    title: "Contact MS Partners.",
+    summary: "Prepare the essential context for an initial discussion about a supply chain, overseas operation, transaction or market question.",
   } satisfies PageHeroContent,
   status: {
-    eyebrow: "Contact information",
-    title: "Contact details will be added after approval.",
-    body: "A verified contact channel will be published here. Until then, use the guidance below to prepare for an efficient first conversation.",
+    eyebrow: "Official Contact Channel",
+    title: contactStatus.notice,
+    body: "The guidance below can help prepare the context for an efficient initial discussion.",
   },
   preparation: {
     eyebrow: "Enquiry preparation",
-    title: "Information that can make an initial discussion more useful.",
-    introduction: "Prepare these points before reaching out. No information is collected through this website.",
+    title: "Information to prepare for an initial discussion.",
+    introduction: "No information is collected through this website.",
     prompts: [
       { label: "Company name", detail: "The organization seeking support." },
       { label: "Country", detail: "The relevant home or operating jurisdiction." },
       { label: "General area of concern", detail: "The decision, relationship or risk question involved." },
-      { label: "Relevant market or transaction", detail: "The commercial context in Türkiye or across borders." },
-      { label: "Preferred contact method", detail: "How you would prefer to continue the discussion." },
-      { label: "Desired timeframe", detail: "Any known decision or reporting milestone." },
+      { label: "Relevant transaction or market", detail: "The commercial context and operating regions involved." },
+      { label: "Preferred timeframe", detail: "Any known operational, transaction or decision milestone." },
     ],
   },
-  privacyNote: "Do not send confidential or personal information until an approved contact channel and privacy notice are published.",
 } as const;
 
 export const contactContent: LocalizedContent<typeof englishContact> = { en: englishContact };

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { MobileNavigation } from "@/components/layout/mobile-navigation";
-import { primaryNavigation } from "@/config/navigation";
+import { headerAction, primaryNavigation } from "@/config/navigation";
 
 export function SiteNavigationState() {
   const pathname = usePathname();
@@ -56,6 +56,7 @@ export function SiteNavigationState() {
             })}
           </ul>
         </nav>
+        <Link className="header-cta" href={headerAction.href}>{headerAction.label}</Link>
       </div>
       <MobileNavigation key={pathname} activePath={pathname} />
       <span className="scroll-progress" aria-hidden="true"><span ref={progressRef} /></span>

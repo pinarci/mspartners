@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { company, temporaryWordmark } from "@/config/brand";
-import { primaryNavigation } from "@/config/navigation";
+import { company, wordmark } from "@/config/brand";
+import { headerAction, primaryNavigation } from "@/config/navigation";
 
 interface MobileNavigationProps {
   activePath: string;
@@ -68,7 +68,7 @@ export function MobileNavigation({ activePath }: MobileNavigationProps) {
           <button className="mobile-menu__backdrop" type="button" aria-label="Close navigation" onClick={() => closeMenu()} />
           <div className="mobile-menu__panel">
             <p className="mobile-menu__wordmark" aria-hidden="true">
-              <span>{temporaryWordmark.lead}</span> {temporaryWordmark.name}
+              <span>{wordmark.lead}</span> {wordmark.name}
             </p>
             <nav aria-label="Mobile navigation">
               <ul>
@@ -90,7 +90,10 @@ export function MobileNavigation({ activePath }: MobileNavigationProps) {
                 })}
               </ul>
             </nav>
-            <p className="mobile-menu__tagline">{company.tagline}</p>
+            <Link className="mobile-menu__cta" href={headerAction.href} onClick={() => closeMenu()}>
+              {headerAction.label}
+            </Link>
+            <p className="mobile-menu__tagline">{company.slogan}</p>
           </div>
         </div>
       ) : null}

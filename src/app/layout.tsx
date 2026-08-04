@@ -18,7 +18,6 @@ const sourceSerif = Source_Serif_4({
   display: "swap",
 });
 
-// TODO: Review metadata after the company identity and positioning are confirmed.
 export const metadata: Metadata = {
   title: { default: siteMetadata.title, template: siteMetadata.titleTemplate },
   description: siteMetadata.description,

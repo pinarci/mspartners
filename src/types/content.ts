@@ -1,9 +1,19 @@
-export type ContentStatus = "provisional" | "confirmed";
+export interface LegalEntity {
+  name: string;
+  location: string;
+}
+
+export interface GeographicPositioning {
+  base: string;
+  affiliate: string;
+  operatingRegions: readonly string[];
+}
 
 export interface CompanyIdentity {
   name: string;
-  tagline: string;
-  status: ContentStatus;
+  slogan: string;
+  legalEntities: readonly LegalEntity[];
+  geographicPositioning: GeographicPositioning;
 }
 
 export interface RouteNavigationItem {
@@ -15,9 +25,6 @@ export interface ServiceItem {
   id: string;
   title: string;
   description: string;
-  detail: string;
-  scope: string[];
-  status: ContentStatus;
 }
 
 export interface DifferentiatorItem {
@@ -26,19 +33,11 @@ export interface DifferentiatorItem {
   description: string;
 }
 
-export interface InsightItem {
-  id: string;
-  title: string;
-  summary: string;
-  status: "planned";
-}
-
 export interface ProcessStep {
   id: string;
   title: string;
   description: string;
   detail: string;
-  status: ContentStatus;
 }
 
 export interface PageHeroContent {
@@ -57,10 +56,9 @@ export interface PageCtaContent {
   };
 }
 
-export interface LinkPlaceholder {
-  label: string;
-  href: string | null;
-  status: ContentStatus;
+export interface ContactStatus {
+  officialChannelConfirmed: boolean;
+  notice: string;
 }
 
 export interface LocalizedContent<T> {
