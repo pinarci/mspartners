@@ -234,7 +234,8 @@ main section[id] { scroll-margin-top: var(--header-offset); }
 .hero__grid {
   min-height: clamp(24rem, calc(100svh - var(--header-height)), 32rem);
   padding-block: clamp(2.75rem, 5vw, 4rem);
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(14rem, 22vw, 18rem);
   align-items: center;
   gap: clamp(2rem, 5vw, 5rem);
 }
@@ -250,6 +251,17 @@ main section[id] { scroll-margin-top: var(--header-offset); }
 }
 .hero__lede { max-width: 40rem; margin-bottom: 1.5rem; color: var(--primary-pale); font-size: clamp(1.02rem, 1.35vw, 1.14rem); line-height: 1.55; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.hero__brand {
+  position: relative;
+  width: 100%;
+  max-width: 18rem;
+  aspect-ratio: 1.55;
+  justify-self: end;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--surface);
+}
+.hero__brand-image { object-fit: cover; object-position: center 35%; }
 
 /* Introduction */
 .introduction { background: var(--background); }
@@ -402,7 +414,7 @@ main section[id] { scroll-margin-top: var(--header-offset); }
   .mobile-menu__tagline { margin: auto 0 0; padding-top: 2rem; color: var(--muted); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
   @keyframes menu-in { from { transform: translateX(100%); } to { transform: translateX(0); } }
 
-  .hero__grid { min-height: 28rem; }
+  .hero__grid { min-height: 28rem; grid-template-columns: minmax(0, 1fr) clamp(8.5rem, 18vw, 11rem); gap: clamp(1.5rem, 3vw, 2.5rem); }
   .hero__content { max-width: 48rem; }
   .introduction__grid, .differentiators__grid, .contact-cta__inner { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -424,7 +436,8 @@ main section[id] { scroll-margin-top: var(--header-offset); }
   .container { width: min(calc(100% - 2rem), var(--container-width)); }
   .site-header__inner { min-height: var(--header-height); }
   .wordmark { font-size: 0.96rem; }
-  .hero__grid { min-height: 26rem; padding-block: 3rem; }
+  .hero__grid { min-height: 26rem; padding-block: 3rem; grid-template-columns: 1fr; }
+  .hero__brand { display: none; }
   .hero h1 { font-size: clamp(2.65rem, 11.5vw, 3.3rem); line-height: 1; }
   .hero__actions, .text-link--primary, .text-link--secondary { width: 100%; }
   .section-heading h2, .contact-cta h2, .state-page h1 { font-size: clamp(2.05rem, 9vw, 2.65rem); }
