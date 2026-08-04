@@ -12,7 +12,6 @@ export function IntroductionSection() {
         <div className="introduction__copy">
           {introduction.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           <blockquote>{introduction.principle}</blockquote>
-          <p className="provisional-note">Provisional company positioning — pending client approval.</p>
           <Link className="text-link text-link--inline section-detail-link" href={introduction.action.href}>
             {introduction.action.label}<span aria-hidden="true">→</span>
           </Link>

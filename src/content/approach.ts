@@ -2,23 +2,23 @@ import type { LocalizedContent, PageCtaContent, PageHeroContent, ProcessStep } f
 
 // TODO: Confirm and approve the working process with the client.
 export const processSteps: ProcessStep[] = [
-  { id: "consultation", title: "Initial Consultation", description: "Understand the decision, context and key concerns.", detail: "Begin with the commercial question, the decision it informs and the information already available. This first discussion would identify whether local review is appropriate and what still needs clarification.", status: "provisional" },
-  { id: "scope", title: "Scope Definition", description: "Agree priorities, boundaries and appropriate sources.", detail: "Define a proportionate scope, expected limitations, communication points and intended deliverables before work begins. The structure may differ depending on the engagement.", status: "provisional" },
-  { id: "review", title: "Local Review", description: "Conduct the defined verification or advisory work.", detail: "Carry out the agreed local review using appropriate available information, observations and commercial context. Activities remain bounded by the confirmed scope.", status: "provisional" },
-  { id: "reporting", title: "Analysis and Reporting", description: "Present material findings with clarity and context.", detail: "Organize relevant observations, explain important limitations and distinguish evidence from interpretation in a concise reporting format.", status: "provisional" },
-  { id: "guidance", title: "Strategic Guidance", description: "Discuss implications and practical next steps.", detail: "Review what the findings may mean for the client’s decision and identify practical questions or specialist input that may be required next.", status: "provisional" },
+  { id: "consultation", title: "Initial Consultation", description: "Understand the decision, context and key concerns.", detail: "Start with the commercial question, the information available and what still needs clarification.", status: "provisional" },
+  { id: "scope", title: "Scope Definition", description: "Agree priorities, boundaries and appropriate sources.", detail: "Define proportionate boundaries, expected limitations, communication points and deliverables before work begins.", status: "provisional" },
+  { id: "review", title: "Local Review", description: "Conduct the defined verification or advisory work.", detail: "Review the agreed information, observations and commercial context within the confirmed scope.", status: "provisional" },
+  { id: "reporting", title: "Analysis and Reporting", description: "Present material findings with clarity and context.", detail: "Organize observations, explain limitations and distinguish evidence from interpretation.", status: "provisional" },
+  { id: "guidance", title: "Strategic Guidance", description: "Discuss implications and practical next steps.", detail: "Consider what the findings mean for the decision and where specialist input may be required.", status: "provisional" },
 ];
 
 const englishApproach = {
   hero: {
     eyebrow: "Our Approach",
     title: "A disciplined engagement, adapted to the question at hand.",
-    summary: "A provisional five-step framework for defining the issue, conducting focused local review and communicating findings with appropriate context and limitations.",
+    summary: "A five-step framework for defining the issue, conducting focused local review and communicating findings with appropriate context and limitations.",
   } satisfies PageHeroContent,
   introduction: {
     eyebrow: "Scope-led methodology",
     title: "Structure without a one-size-fits-all process.",
-    body: "Every potential engagement would be shaped around its commercial purpose, available information and appropriate boundaries. The process below is a working model rather than a fixed or certified methodology.",
+    body: "Each engagement is shaped around its commercial purpose, available information and appropriate boundaries rather than a one-size-fits-all methodology.",
   },
   principles: {
     eyebrow: "Engagement principles",
@@ -30,7 +30,7 @@ const englishApproach = {
       { title: "Practical communication", description: "Material observations would be communicated clearly and without unnecessary complexity." },
     ],
   },
-  limitation: "Final methodology, timing, deliverables and engagement terms remain subject to client confirmation and the circumstances of each assignment.",
+  limitation: "Methodology, timing and deliverables are adapted to the question, information available and agreed scope.",
   cta: {
     eyebrow: "Plan the scope",
     title: "Discuss how an engagement may proceed.",

@@ -28,14 +28,13 @@ export default function ApproachPage() {
         </Container>
       </section>
 
-      <section className="approach-index" aria-label="Provisional engagement process">
+      <section className="approach-index" aria-label="Engagement process">
         <Container>
           <ol>
             {processSteps.map((step, index) => (
               <li key={step.id}>
                 <p className="approach-index__number">{String(index + 1).padStart(2, "0")}</p>
                 <div>
-                  <p className="status-label">Provisional step</p>
                   <h2>{step.title}</h2>
                 </div>
                 <div>

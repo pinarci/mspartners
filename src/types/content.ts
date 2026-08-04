@@ -55,7 +55,6 @@ export interface PageCtaContent {
     label: string;
     href: `/${string}`;
   };
-  status?: string;
 }
 
 export interface LinkPlaceholder {

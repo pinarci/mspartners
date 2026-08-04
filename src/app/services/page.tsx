@@ -28,14 +28,13 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      <section className="service-index" aria-label="Provisional service areas">
+      <section className="service-index" aria-label="Service areas">
         <Container>
           <ol>
             {services.map((service, index) => (
               <li id={service.id} key={service.id}>
                 <p className="service-index__number">{String(index + 1).padStart(2, "0")}</p>
                 <div className="service-index__content">
-                  <p className="status-label">Provisional service area</p>
                   <h2>{service.title}</h2>
                   <p className="service-index__summary">{service.description}</p>
                   <p>{service.detail}</p>

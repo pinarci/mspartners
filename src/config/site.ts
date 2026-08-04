@@ -6,7 +6,7 @@ export const siteMetadata = {
   title: `${company.name} | ${company.tagline}`,
   titleTemplate: `%s | ${company.name}`,
   description:
-    "Provisional corporate website for independent cross-border risk management, audit and business advisory support involving Türkiye.",
+    "Independent cross-border risk management, audit and business advisory support involving Türkiye.",
   status: "provisional",
 } as const;
 
@@ -18,15 +18,15 @@ export const pageMetadata = {
   },
   about: {
     title: "About Us",
-    description: "Provisional overview of MS Partners, its cross-border purpose and intended professional principles.",
+    description: "An overview of MS Partners, its cross-border purpose and professional principles.",
   },
   services: {
     title: "Services & Expertise",
-    description: "Provisional risk management, verification and cross-border advisory service areas involving Türkiye.",
+    description: "Risk management, verification and cross-border advisory service areas involving Türkiye.",
   },
   approach: {
     title: "Our Approach",
-    description: "A provisional engagement framework for focused local review, analysis, reporting and strategic guidance.",
+    description: "An engagement framework for focused local review, analysis, reporting and strategic guidance.",
   },
   insights: {
     title: "Insights",
