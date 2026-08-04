@@ -1,67 +1,78 @@
-# MS Partners — Phase 3A corporate website
+# MS Partners corporate website
 
-Professional hybrid multi-page architecture for the provisional MS Partners corporate website. The approved homepage remains the primary overview, with focused secondary pages for deeper corporate information.
+English-only corporate website for MS Partners, built with Next.js 16.3, React 19.2, TypeScript 6 and pnpm 11.20.0.
 
-## Technical stack
+## Local development
 
-- Next.js 16.3 App Router with React 19.2
-- TypeScript 6 in strict mode
-- Tailwind CSS 4 and centralized semantic CSS tokens
-- ESLint 9 with Next.js Core Web Vitals and TypeScript rules
-- pnpm 11.20.0, pinned in `package.json`
-
-Node.js 24 or newer is required. Use the pinned package manager through Corepack:
+Node.js 24 or newer is required. Use the package-manager version pinned in `package.json`:
 
 ```bash
 corepack pnpm install
 corepack pnpm dev
 ```
 
-Available checks are `corepack pnpm lint`, `corepack pnpm typecheck`, `corepack pnpm build` and `corepack pnpm start`.
+Available checks are:
 
-## Routes and navigation
+```bash
+corepack pnpm lint
+corepack pnpm typecheck
+corepack pnpm build
+corepack pnpm start
+```
+
+## Current routes
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Rich homepage overview |
-| `/about` | Provisional company purpose and principles |
-| `/services` | Six provisional service areas |
-| `/approach` | Provisional five-step engagement framework |
-| `/insights` | Planned editorial programme, with no fake articles |
-| `/contact` | Contact-preparation guidance and pending contact state |
+| `/` | Corporate overview |
+| `/about` | Client-approved company positioning |
+| `/services` | Professional placeholder pending final service approval |
+| `/areas-of-work` | Broad Areas of Work placeholder pending final approval |
+| `/contact` | Contact placeholders, planned Maidan location, map and enquiry preparation |
+| `/approach` | Permanent redirect to `/areas-of-work` |
 
-The site uses one primary route navigation in the shared header and marks the active destination with `aria-current="page"`. The thin decorative scroll-progress indicator works across routes and resets when the pathname changes. Homepage section IDs remain available for direct links such as `/#services`, with a centralized sticky-header offset.
+The shared header and footer use the centralized route list in `src/config/navigation.ts`. Active navigation uses `aria-current="page"`; the accessible mobile menu and scroll-progress indicator remain shared across routes.
 
-## Structure
+## Client-source-of-truth policy
+
+Only information supplied or approved in writing by the client may be presented as a company fact. Inferred service catalogues, target-customer sections, differentiator lists and fixed methodologies must remain unpublished until approved. Confirmed identity is centralized in `src/config/brand.ts`; pending contact and location data is centralized in `src/config/contact.ts`.
+
+## Pending contact information
+
+The corporate email is intentionally stored as `null` with a `pending` status. The Contact page displays “Pending confirmation” without creating a `mailto:` link.
+
+When the corporate email is confirmed:
+
+1. Set `corporateEmail` in `src/config/contact.ts` to the approved address.
+2. Change `corporateEmailStatus` to `"confirmed"`.
+3. Run lint, type-check and build. The existing Contact component will render the address as a `mailto:` link.
+
+The Maidan building address identifies only the planned Ankara location. Virtual-office and unit details remain `null` and are not described as a registered or correspondence address. When approved, add only the confirmed detail to `ankaraOfficeDetails` in `src/config/contact.ts`, and update the building/address fields only if the client confirms a different public location.
+
+## Google Maps Embed API
+
+Copy `.env.example` to the appropriate local environment file or add this variable in Vercel:
 
 ```text
-src/
-  app/                  Required routes, metadata, global styles and error states
-  components/
-    layout/             Shared header, mobile navigation and footer
-    navigation/         Route navigation and scroll-progress state
-    pages/              Shared compact page hero and final CTA
-    sections/           Homepage sections
-    ui/                 Small presentation primitives
-  config/               Company, navigation and metadata configuration
-  content/              Locale-ready page content and shared service/process data
-  types/                Shared content contracts
-public/brand/           Preserved provisional brand reference
-docs/                   Architecture, brand and content guidance
+NEXT_PUBLIC_GOOGLE_MAPS_EMBED_API_KEY=
 ```
 
-## Editing content and brand
+Do not commit a real key. When the variable is present at build time, the Contact page uses the official Google Maps Embed API place mode for the Maidan complex. When it is absent, the build still succeeds and the page shows a professional fallback with an external “View Maidan on Google Maps” search link.
 
-- Company identity: `src/config/brand.ts`
-- Primary route navigation: `src/config/navigation.ts`
-- Page metadata and contact/link placeholders: `src/config/site.ts`
-- Page content: `src/content/home.ts`, `about.ts`, `services.ts`, `approach.ts`, `insights.ts`, `contact.ts`
-- Global brand and layout tokens: the `:root` block in `src/app/globals.css`
+The Google Cloud key must be restricted:
 
-All identity, positioning, services, methodology and metadata remain provisional. Unconfirmed information is centralized and presented with restrained public-facing language; no names, credentials, client claims, addresses, phone numbers or email addresses have been invented.
+- Restrict API usage to the Maps Embed API.
+- Apply HTTP referrer restrictions for every approved production and preview domain.
 
-## Remaining client information and limitations
+No Maps JavaScript package or consent-management dependency is used in this phase.
 
-Client approval is still required for the company identity, positioning, service scope, team biographies and credentials, contact details, affiliated websites, legal/privacy information, final brand assets and English content. See `docs/content-guide.md` for the complete checklist.
+## Content locations
 
-Phase 3A intentionally has no Team page, individual service/article routes, real articles, contact form, backend, CMS, bilingual routing, analytics, cookies, legal pages or deployment. These are future decisions, not broken links or hidden features.
+- Company identity and legal entities: `src/config/brand.ts`
+- Contact and map configuration: `src/config/contact.ts`
+- Navigation: `src/config/navigation.ts`
+- Metadata: `src/config/site.ts`
+- Public page copy: `src/content/`
+- Design tokens and responsive presentation: `src/app/globals.css`
+
+There is no contact backend, final email, confirmed office unit, legal page, analytics integration or production-domain configuration in the repository.

@@ -1,13 +1,11 @@
-# Provisional brand direction
+# Current brand direction
 
-The supplied `brand-reference.jpeg` was found and preserved unchanged at `public/brand/brand-reference.jpeg`. It is a visual reference only. Its large white canvas and lack of transparency make it unsuitable as the primary header logo, and it must not be considered a final production logo.
+The supplied `brand-reference.jpeg` is preserved unchanged at `public/brand/brand-reference.jpeg` and used in the homepage hero at the client’s request. The compact header identity remains text-based because the source image has a large white canvas and is not suitable for a small horizontal header treatment.
 
-The temporary header wordmark is text-based. It communicates the provisional company name without tracing, recreating or materially altering the supplied mark. A final asset should be an approved SVG whenever possible, or a high-resolution transparent PNG, with horizontal and compact lockups, clear-space guidance, minimum sizes and light/dark variants.
+The public interface uses deep navy and white as its dominant identity, with restrained muted gold for small rules, labels, actions and focus treatment. The interface must not introduce red CSS accents, gradients, large gold backgrounds or decorative effects that weaken the institutional presentation.
 
-The provisional palette uses deep navy (`#092D65`) as the dominant color and brand red (`#C9050F`) as a limited accent. Navy carries the large corporate surfaces because it supports a discreet, trustworthy tone. Red is reserved for small rules, labels, actions and emphasis so the site does not feel aggressive or political.
+All interface colors are centralized as semantic custom properties in the `:root` block of `src/app/globals.css`. Components should not introduce scattered brand hex values.
 
-All brand colors are defined once as semantic custom properties in the `:root` block of `src/app/globals.css`. Replace the token values there to update the site globally; components should not introduce scattered brand hex values. Two lighter red values currently support readable hover and dark-background treatments and should be consolidated into approved expanded brand tokens after the final palette is supplied.
+Source Serif 4 is used for editorial headings and Source Sans 3 for body copy, navigation and interface text. Both are loaded through `next/font`. Layout uses fine rules, structured alignment, calm spacing, restrained corners and a limited elevated-panel shadow for mobile navigation.
 
-The Phase 2 typography pairs Source Serif 4 for major editorial headings with Source Sans 3 for body copy, navigation and interface text. Both are loaded through `next/font` and self-hosted by the application. The pairing is provisional and should be reassessed alongside the final identity.
-
-Phase 2 introduces a more formal visual grammar built from fine rules, structured panels, generous whitespace and a CSS-only audit-document composition in the hero. Corners remain restrained, shadows are limited to elevated panels, and transitions use a centralized timing scale. Red should remain approximately 5–10% of the visible composition and must not become a large background color.
+Any future replacement logo should be supplied and approved by the client, ideally as an SVG or transparent high-resolution PNG with horizontal and compact lockups, minimum-size guidance and light/dark variants.

@@ -3,12 +3,11 @@ interface SectionHeadingProps {
   eyebrow: string;
   title: string;
   description?: string;
-  theme?: "light" | "dark";
 }
 
-export function SectionHeading({ id, eyebrow, title, description, theme = "light" }: SectionHeadingProps) {
+export function SectionHeading({ id, eyebrow, title, description }: SectionHeadingProps) {
   return (
-    <div className={`section-heading section-heading--${theme}`}>
+    <div className="section-heading">
       <p className="eyebrow">{eyebrow}</p>
       <h2 id={id}>{title}</h2>
       {description ? <p className="section-heading__description">{description}</p> : null}

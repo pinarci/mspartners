@@ -21,25 +21,6 @@ export interface RouteNavigationItem {
   href: `/${string}`;
 }
 
-export interface ServiceItem {
-  id: string;
-  title: string;
-  description: string;
-}
-
-export interface DifferentiatorItem {
-  id: string;
-  title: string;
-  description: string;
-}
-
-export interface ProcessStep {
-  id: string;
-  title: string;
-  description: string;
-  detail: string;
-}
-
 export interface PageHeroContent {
   eyebrow: string;
   title: string;
@@ -56,9 +37,18 @@ export interface PageCtaContent {
   };
 }
 
-export interface ContactStatus {
-  officialChannelConfirmed: boolean;
-  notice: string;
+export type ContactFieldStatus = "pending" | "confirmed";
+
+export interface ContactConfiguration {
+  corporateEmail: string | null;
+  corporateEmailStatus: ContactFieldStatus;
+  phone: string | null;
+  washingtonAddress: string | null;
+  ankaraBuildingName: string;
+  ankaraBuildingAddress: readonly [string, string];
+  ankaraOfficeDetails: string | null;
+  mapPlaceQuery: string;
+  mapEmbedApiKeyAvailable: boolean;
 }
 
 export interface LocalizedContent<T> {

@@ -4,7 +4,7 @@ export const primaryNavigation: RouteNavigationItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "How We Work", href: "/approach" },
+  { label: "Areas of Work", href: "/areas-of-work" },
   { label: "Contact", href: "/contact" },
 ];
 

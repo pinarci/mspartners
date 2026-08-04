@@ -1,28 +1,28 @@
-# Client content checklist
+# Client content status
 
-The following information is required before provisional content can be approved:
+The client’s written requirements are the source of truth. Do not publish inferred claims, catalogues, methodologies, audience segments or contact details as approved facts.
 
-- Final legal company name
-- Final public-facing company name
-- Confirmed tagline
-- Final SVG or transparent PNG logo and usage guidance
-- Confirmed brand colors and typography direction
-- Approved company description and positioning
-- Confirmed service names, scope and descriptions
-- Approved methodology, engagement stages, deliverables and limitation wording
-- Priority target customers, sectors and geographies
-- Approved team names, roles, biographies and photographs
-- Substantiated experience claims and permitted wording
-- Public email address and phone number
-- Office locations and mailing details
-- Affiliated websites and relationship descriptions
-- Official social media links
-- Preferred English/Turkish language and URL structure
-- Legal business details required for publication
-- Privacy notice requirements and responsible contact
-- Editorial approval process for future insights, including authorship and review ownership
-- Cookie requirements, if any tools will set cookies
-- Approved photographs with documented usage rights
-- Reference websites and specific likes/dislikes
+## Confirmed for public use
 
-Do not publish claims, people, contact details, affiliations or legal content until the client has supplied and approved them.
+- MS Partners
+- MS Partners LLC — Washington State, United States
+- MS Partners Ltd. Şti. — Ankara, Türkiye
+- “De-Risking Global Supply Chains.”
+- English-only website content
+- Approved About positioning
+- Navy and white identity with optional restrained muted gold
+- Planned Ankara location at Maidan in Çankaya, clearly identified as pending final office details
+
+## Still required
+
+- Final service titles, descriptions, scope and deliverables
+- Approved Areas of Work detail
+- Approved working methodology, if one will be published
+- Corporate email address
+- Any public telephone number
+- Confirmed Ankara virtual-office and unit details
+- Confirmation of any address intended as a registered or correspondence address
+- Final production and preview domains for Google Maps referrer restrictions
+- Legal and privacy content required before a contact backend is introduced
+
+A separate target-customer section and a separate differentiators or “Why Us” section are not approved and must remain unpublished.

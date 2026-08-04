@@ -3,7 +3,7 @@ import { PageCta } from "@/components/pages/page-cta";
 import { PageHero } from "@/components/pages/page-hero";
 import { Container } from "@/components/ui/container";
 import { pageMetadata } from "@/config/site";
-import { services, servicesPageContent } from "@/content/services";
+import { servicesPageContent } from "@/content/services";
 
 export const metadata: Metadata = {
   title: pageMetadata.services.title,
@@ -25,22 +25,6 @@ export default function ServicesPage() {
             <h2 id="services-intro-title">{content.introduction.title}</h2>
           </div>
           <p className="page-lede">{content.introduction.body}</p>
-        </Container>
-      </section>
-
-      <section className="service-index" aria-label="Service areas">
-        <Container>
-          <ol>
-            {services.map((service, index) => (
-              <li id={service.id} key={service.id}>
-                <p className="service-index__number">{String(index + 1).padStart(2, "0")}</p>
-                <div className="service-index__content">
-                  <h2>{service.title}</h2>
-                  <p className="service-index__summary">{service.description}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
         </Container>
       </section>
 

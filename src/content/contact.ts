@@ -1,16 +1,34 @@
 import type { LocalizedContent, PageHeroContent } from "@/types/content";
-import { contactStatus } from "@/config/site";
+import { contactConfiguration } from "@/config/contact";
 
 const englishContact = {
   hero: {
     eyebrow: "Contact",
     title: "Contact MS Partners.",
-    summary: "Prepare the essential context for an initial discussion about a supply chain, overseas operation, transaction or market question.",
+    summary: "Corporate contact information, the planned Ankara location and concise enquiry-preparation guidance.",
   } satisfies PageHeroContent,
-  status: {
-    eyebrow: "Official Contact Channel",
-    title: contactStatus.notice,
-    body: "The guidance below can help prepare the context for an efficient initial discussion.",
+  information: {
+    eyebrow: "Contact Information",
+    title: "Current contact details.",
+    email: {
+      label: "Corporate Email",
+      pendingValue: "Pending confirmation",
+      supportingText: "The official corporate email address will be added following confirmation.",
+    },
+    ankara: {
+      label: "Planned Ankara Office Location",
+      building: contactConfiguration.ankaraBuildingName,
+      address: contactConfiguration.ankaraBuildingAddress,
+      statusNote: "Virtual-office and unit details remain subject to final confirmation.",
+    },
+  },
+  map: {
+    eyebrow: "Location",
+    title: "Maidan in Çankaya, Ankara.",
+    iframeTitle: "Map showing Maidan İş ve Yaşam Merkezi in Ankara",
+    fallbackText: "The location map will appear here when the approved Google Maps Embed API key is configured.",
+    linkLabel: "View Maidan on Google Maps",
+    note: "Map indicates the Maidan complex. Final MS Partners office details remain subject to confirmation.",
   },
   preparation: {
     eyebrow: "Enquiry preparation",

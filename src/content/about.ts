@@ -20,22 +20,6 @@ const englishAbout = {
       "Our objective is to provide international businesses with transparent local execution, disciplined reporting and commercially practical insight for their overseas operations.",
     ],
   },
-  crossBorder: {
-    eyebrow: "Cross-Border Role",
-    title: "Independent support from local context to practical action.",
-    introduction: "Each engagement is defined around the client’s commercial purpose, the operating context and the information reasonably available.",
-    points: [
-      { title: "Independent local insight", description: "Provide local context without claiming authority, certainty or guaranteed outcomes." },
-      { title: "Transparent execution", description: "Maintain clear communication about the work performed, information available and relevant limitations." },
-      { title: "Disciplined reporting", description: "Organize material observations so international decision-makers can understand and discuss them." },
-      { title: "Commercial practicality", description: "Frame implications and recommendations around operational priorities and proportionate next steps." },
-    ],
-  },
-  principles: {
-    eyebrow: "Operating Principles",
-    title: "High standards with appropriate restraint.",
-    items: ["Independent advisory positioning", "Cross-border commercial focus", "Local field capability", "Transparent execution", "Disciplined reporting", "Practical decision support"],
-  },
   cta: {
     eyebrow: "Contact",
     title: "Bring local context into your next commercial decision.",
