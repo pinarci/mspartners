@@ -48,6 +48,8 @@ export interface ContactConfiguration {
   ankaraBuildingAddress: readonly [string, string];
   ankaraOfficeDetails: string | null;
   mapPlaceQuery: string;
+  mapShareUrl: string;
+  mapPreviewEmbedUrl: string;
   mapEmbedApiKeyAvailable: boolean;
 }
 

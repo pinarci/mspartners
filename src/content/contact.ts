@@ -26,7 +26,6 @@ const englishContact = {
     eyebrow: "Location",
     title: "Maidan in Çankaya, Ankara.",
     iframeTitle: "Map showing Maidan İş ve Yaşam Merkezi in Ankara",
-    fallbackText: "The location map will appear here when the approved Google Maps Embed API key is configured.",
     linkLabel: "View Maidan on Google Maps",
     note: "Map indicates the Maidan complex. Final MS Partners office details remain subject to confirmation.",
   },

@@ -57,7 +57,7 @@ Copy `.env.example` to the appropriate local environment file or add this variab
 NEXT_PUBLIC_GOOGLE_MAPS_EMBED_API_KEY=
 ```
 
-Do not commit a real key. When the variable is present at build time, the Contact page uses the official Google Maps Embed API place mode for the Maidan complex. When it is absent, the build still succeeds and the page shows a professional fallback with an external “View Maidan on Google Maps” search link.
+Do not commit a real key. When the variable is present at build time, the Contact page uses the official Google Maps Embed API place mode for the Maidan complex. When it is absent, the page uses the client-supplied Google Maps share location to render a no-key embedded preview. The exact share link remains available as the external “View Maidan on Google Maps” destination.
 
 The Google Cloud key must be restricted:
 

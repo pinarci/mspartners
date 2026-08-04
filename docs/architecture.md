@@ -13,7 +13,7 @@ The root layout, route pages, shared page components, footer and homepage sectio
 - `SiteNavigationState`, which reads the pathname for active-route state and updates the scroll-progress CSS property.
 - `MobileNavigation`, which manages the accessible menu, body scroll lock, Escape key, focus restoration and breakpoint cleanup.
 
-The Contact page resolves the optional Maps Embed URL during rendering. It does not load a Maps JavaScript package.
+The Contact page resolves the optional Maps Embed API URL during rendering. Without a key it uses the embeddable preview associated with the client-supplied Google Maps share location. It does not load a Maps JavaScript package.
 
 ## Navigation and scrolling
 

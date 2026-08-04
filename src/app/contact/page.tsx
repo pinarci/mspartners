@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/pages/page-hero";
 import { Container } from "@/components/ui/container";
-import { contactConfiguration, getGoogleMapsEmbedUrl, googleMapsSearchUrl } from "@/config/contact";
+import { contactConfiguration, getGoogleMapsEmbedUrl, googleMapsExternalUrl } from "@/config/contact";
 import { pageMetadata } from "@/config/site";
 import { contactContent } from "@/content/contact";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const content = contactContent.en;
-  const mapEmbedUrl = contactConfiguration.mapEmbedApiKeyAvailable ? getGoogleMapsEmbedUrl() : null;
+  const mapEmbedUrl = getGoogleMapsEmbedUrl();
   const corporateEmail = contactConfiguration.corporateEmailStatus === "confirmed"
     ? contactConfiguration.corporateEmail
     : null;
@@ -56,25 +56,21 @@ export default function ContactPage() {
             <p className="eyebrow">{content.map.eyebrow}</p>
             <h2 id="contact-map-title">{content.map.title}</h2>
           </div>
-          {mapEmbedUrl ? (
-            <div className="contact-map-frame">
-              <iframe
-                src={mapEmbedUrl}
-                title={content.map.iframeTitle}
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="strict-origin-when-cross-origin"
-              />
-            </div>
-          ) : (
-            <div className="contact-map-fallback">
-              <p>{content.map.fallbackText}</p>
-              <a href={googleMapsSearchUrl} target="_blank" rel="noopener noreferrer">
-                {content.map.linkLabel}<span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          )}
-          <p className="contact-map-note">{content.map.note}</p>
+          <div className="contact-map-frame">
+            <iframe
+              src={mapEmbedUrl}
+              title={content.map.iframeTitle}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+          <div className="contact-map-meta">
+            <p className="contact-map-note">{content.map.note}</p>
+            <a href={googleMapsExternalUrl} target="_blank" rel="noopener noreferrer">
+              {content.map.linkLabel}<span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </Container>
       </section>
 

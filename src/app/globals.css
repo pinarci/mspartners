@@ -303,11 +303,10 @@ main section[id] { scroll-margin-top: var(--header-offset); }
 .contact-map-frame { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--border-strong); background: var(--surface); }
 .contact-map-frame iframe { width: 100%; height: 100%; display: block; border: 0; }
 .contact-map-frame iframe:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: -4px; }
-.contact-map-fallback { min-height: clamp(18rem, 38vw, 30rem); padding: clamp(2rem, 5vw, 4rem); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; border: 1px solid var(--border-strong); background: var(--surface); }
-.contact-map-fallback p { max-width: 42rem; margin-bottom: 1.25rem; color: var(--muted); font-size: 1.05rem; }
-.contact-map-fallback a { display: inline-flex; align-items: center; gap: 0.65rem; color: var(--primary); font-size: 0.76rem; font-weight: 750; letter-spacing: 0.1em; text-transform: uppercase; }
-.contact-map-fallback a span { font-size: 1.05rem; }
-.contact-map-note { max-width: 52rem; margin: 1rem 0 0; color: var(--muted); font-size: 0.88rem; }
+.contact-map-meta { margin-top: 1rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; }
+.contact-map-note { max-width: 52rem; margin: 0; color: var(--muted); font-size: 0.88rem; }
+.contact-map-meta a { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 0.65rem; color: var(--primary); font-size: 0.72rem; font-weight: 750; letter-spacing: 0.1em; text-transform: uppercase; }
+.contact-map-meta a span { font-size: 1rem; }
 .prompt-list { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2.5rem; }
 .prompt-list div { min-height: 5.25rem; padding-top: 0.85rem; border-top: 1px solid var(--border); }
 .prompt-list dt { margin-bottom: 0.4rem; color: var(--primary-deep); font-family: var(--font-editorial); font-size: 1.35rem; line-height: 1.3; }
@@ -402,6 +401,7 @@ main section[id] { scroll-margin-top: var(--header-offset); }
   .page-copy-grid { gap: 1.5rem; }
   .contact-information-grid, .prompt-list { grid-template-columns: 1fr; }
   .prompt-list div { min-height: auto; }
+  .contact-map-meta { align-items: flex-start; flex-direction: column; }
   .page-cta__grid { gap: 1.75rem; }
   .site-footer__top { grid-template-columns: 1fr; }
   .site-footer__identity { grid-column: auto; }
