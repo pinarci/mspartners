@@ -13,7 +13,6 @@ export function HeroSection() {
           <p className="hero__lede">{hero.description}</p>
           <div className="hero__actions">
             <TextLink href={hero.primaryAction.href} variant="primary">{hero.primaryAction.label}</TextLink>
-            <TextLink href={hero.secondaryAction.href} variant="secondary">{hero.secondaryAction.label}</TextLink>
           </div>
         </div>
       </Container>

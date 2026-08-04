@@ -8,7 +8,6 @@ const englishHome = {
     description:
       "Independent local insight, commercial risk assessment and advisory support for international companies operating across Türkiye and the United States.",
     primaryAction: { label: "Explore Our Services", href: "#services" },
-    secondaryAction: { label: "Discuss Your Needs", href: "/contact" },
   },
   introduction: {
     eyebrow: "Cross-Border Perspective",

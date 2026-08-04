@@ -8,8 +8,3 @@ export const primaryNavigation: RouteNavigationItem[] = [
   { label: "Insights", href: "/insights" },
   { label: "Contact", href: "/contact" },
 ];
-
-export const headerAction = {
-  label: "Discuss your needs",
-  href: "/contact",
-} as const;
