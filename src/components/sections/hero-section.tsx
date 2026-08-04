@@ -17,14 +17,15 @@ export function HeroSection() {
             <TextLink href={hero.secondaryAction.href} variant="secondary">{hero.secondaryAction.label}</TextLink>
           </div>
         </div>
-        <div className="hero__brand">
+        <div className="hero__brand" aria-hidden="true">
           <Image
             className="hero__brand-image"
             src="/brand/brand-reference.jpeg"
-            alt="MS Partners"
-            fill
+            alt=""
+            width={1254}
+            height={1254}
             priority
-            sizes="(max-width: 680px) 0px, (max-width: 920px) 11rem, (max-width: 1200px) 22vw, 18rem"
+            sizes="(max-width: 680px) 0px, (max-width: 920px) 12rem, (max-width: 1200px) 28vw, 24rem"
           />
         </div>
       </Container>
