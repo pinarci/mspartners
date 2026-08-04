@@ -96,18 +96,21 @@ main section[id] { scroll-margin-top: var(--header-offset); }
 .header-navigation-state { display: flex; align-items: center; }
 .wordmark {
   position: relative;
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.42rem;
-  color: var(--accent);
-  font-size: 1rem;
-  font-weight: 750;
-  letter-spacing: 0.16em;
-  line-height: 1;
-  text-transform: uppercase;
-  white-space: nowrap;
+  width: 3.75rem;
+  height: 3.25rem;
+  display: block;
+  overflow: hidden;
+  flex: 0 0 auto;
+  background: var(--surface);
 }
-.wordmark__ms { color: var(--primary); }
+.wordmark__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transform: scale(1.7);
+  transform-origin: 50% 40%;
+}
 .desktop-header { display: flex; align-items: center; gap: clamp(1.25rem, 2.5vw, 2.5rem); }
 .site-nav, .footer-nav, .footer-services {
   margin: 0;
@@ -443,7 +446,7 @@ main section[id] { scroll-margin-top: var(--header-offset); }
   :root { --section-spacing: 3rem; --header-height: 4rem; }
   .container { width: min(calc(100% - 2rem), var(--container-width)); }
   .site-header__inner { min-height: var(--header-height); }
-  .wordmark { font-size: 0.96rem; }
+  .wordmark { width: 3.45rem; height: 3rem; }
   .hero__grid { min-height: 26rem; padding-block: 3rem; grid-template-columns: 1fr; }
   .hero__brand { display: none; }
   .hero h1 { font-size: clamp(2.65rem, 11.5vw, 3.3rem); line-height: 1; }
