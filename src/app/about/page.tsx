@@ -30,6 +30,33 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      <section className="page-section page-section--muted" aria-labelledby="about-trust-title">
+        <Container>
+          <div className="page-section-heading">
+            <p className="eyebrow">{content.trustPillars.eyebrow}</p>
+            <h2 id="about-trust-title">{content.trustPillars.title}</h2>
+          </div>
+          <div className="trust-card-grid">
+            {content.trustPillars.items.map((pillar) => (
+              <article className="trust-card" key={pillar.title}>
+                <h3>{pillar.title}</h3>
+                <p>{pillar.description}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="page-section" aria-labelledby="about-operating-model-title">
+        <Container className="page-copy-grid">
+          <div>
+            <p className="eyebrow">{content.operatingModel.eyebrow}</p>
+            <h2 id="about-operating-model-title">{content.operatingModel.title}</h2>
+          </div>
+          <p className="page-lede">{content.operatingModel.body}</p>
+        </Container>
+      </section>
+
       <PageCta content={content.cta} />
     </article>
   );

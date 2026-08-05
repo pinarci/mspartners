@@ -2,10 +2,8 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { company } from "@/config/brand";
 import { primaryNavigation } from "@/config/navigation";
-import { homeContent } from "@/content/home";
 
 export function Footer() {
-  const content = homeContent.en.footer;
   return (
     <footer className="site-footer">
       <Container>
@@ -29,7 +27,7 @@ export function Footer() {
           </nav>
         </div>
         <div className="site-footer__bottom">
-          <p>{content.previewNotice}</p>
+          <p>Independent global advisory for cross-border operations.</p>
         </div>
       </Container>
     </footer>

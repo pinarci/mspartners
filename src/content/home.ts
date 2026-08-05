@@ -1,45 +1,74 @@
 import { company } from "@/config/brand";
+import { areasOfWorkItems } from "@/content/areas-of-work";
+import { serviceAreas } from "@/content/services";
 import type { LocalizedContent } from "@/types/content";
 
 const englishHome = {
   hero: {
-    eyebrow: "Independent Cross-Border Advisory",
+    eyebrow: "Washington-Based Independent Global Advisory",
     title: company.slogan,
-    description: "Independent local insight and practical advisory support for complex cross-border operations across Türkiye, Europe and Asia.",
+    description: "MS Partners combines Washington-based corporate responsibility with on-the-ground execution to turn complex international trade, investment and financing requirements into clear, secure and sustainable solutions.",
+    compactLine: "Your on-the-ground partner for complex cross-border operations.",
     primaryAction: { label: "About MS Partners", href: "/about" },
     secondaryAction: { label: "Contact Us", href: "/contact" },
   },
   introduction: {
-    eyebrow: "Washington & Ankara",
-    title: "Local context for complex cross-border operations.",
+    eyebrow: "Company Positioning",
+    title: "Washington accountability with practical field execution.",
     body: [
-      `Based in ${company.geographicPositioning.base}, MS Partners works with its affiliate in ${company.geographicPositioning.affiliate} across ${company.geographicPositioning.operatingRegions.join(", ")}.`,
-      "The firm addresses uncertainty and operational risk in cross-border business through local context and commercially practical insight.",
+      "MS Partners is a Washington-based independent global advisory firm established to transform complex international trade processes into clear, secure and sustainable solutions.",
+      "The firm combines Washington-based corporate responsibility with local execution in developing sourcing and commercial centres, helping clients coordinate cross-border requirements without the immediate need to establish a local entity in each market.",
     ],
-    principle: "Independent insight. Practical local execution.",
+    principle: "Washington-based accountability. Local field execution. Independent review.",
     action: { label: "Learn About MS Partners", href: "/about" },
+  },
+  trustPillars: {
+    eyebrow: "Trust Anchors",
+    title: "A disciplined structure for cross-border engagement.",
+    items: [
+      {
+        title: "Washington-Based Framework",
+        description: "A Washington-based corporate structure supporting clear responsibility and cross-border engagement.",
+      },
+      {
+        title: "On-the-Ground Execution",
+        description: "Local coordination, inspection and practical field support where commercial activity takes place.",
+      },
+      {
+        title: "Independent Review",
+        description: "Objective commercial, financial and operational review aligned with the client’s long-term interests.",
+      },
+    ],
   },
   services: {
     eyebrow: "Services",
-    title: "Services shaped around each engagement.",
-    description: "Our detailed service portfolio is currently being finalized. Further information will be published following final client approval.",
+    title: "Focused support across the operating cycle.",
+    description: "Five approved service areas support decisions, verification, logistics, financing and continuous local coordination.",
+    items: serviceAreas,
     action: { label: "View Services", href: "/services" },
+  },
+  operatingModel: {
+    eyebrow: "Operating Model",
+    title: "Washington-based responsibility. Local execution where it matters.",
+    body: "Our structure combines a Washington-based corporate platform with local coordination and field capability in Türkiye and relevant international markets. This allows clients to address cross-border requirements through one coordinated relationship rather than establishing an immediate local presence in every jurisdiction.",
+    entities: company.legalEntities,
   },
   areasOfWork: {
     eyebrow: "Areas of Work",
-    title: "Cross-border support shaped by local requirements.",
-    description: "Our areas of work are being reviewed and will be presented in detail following final approval.",
+    title: "Commercial environments where MS Partners may operate.",
+    description: "Areas of work describe the contexts in which cross-border requirements may require local information, commercial coordination and field-level clarity.",
+    items: areasOfWorkItems,
     action: { label: "View Areas of Work", href: "/areas-of-work" },
   },
   contact: {
     eyebrow: "Contact",
-    title: "Discuss your requirements with MS Partners.",
-    description: "Official contact details will be added following confirmation.",
+    title: "Discuss your cross-border requirements with MS Partners.",
+    description: "Prepare the commercial objective, operating context and principal areas of concern for an initial discussion.",
     actionLabel: "Contact Us",
     actionHref: "/contact",
   },
   footer: {
-    previewNotice: "Concept preview — Company information and content remain subject to final approval.",
+    note: "Independent global advisory for cross-border operations.",
   },
 } as const;
 

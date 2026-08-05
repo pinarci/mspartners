@@ -2,7 +2,7 @@ import type { CompanyIdentity } from "@/types/content";
 
 export const company: CompanyIdentity = {
   name: "MS Partners",
-  slogan: "De-Risking Global Supply Chains.",
+  slogan: "De-Risking Cross-Border Operations.",
   legalEntities: [
     { name: "MS Partners LLC", location: "Washington State, United States" },
     { name: "MS Partners Ltd. Şti.", location: "Ankara, Türkiye" },

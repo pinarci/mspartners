@@ -7,16 +7,16 @@ The client’s written requirements are the source of truth. Do not publish infe
 - MS Partners
 - MS Partners LLC — Washington State, United States
 - MS Partners Ltd. Şti. — Ankara, Türkiye
-- “De-Risking Global Supply Chains.”
+- “De-Risking Cross-Border Operations.”
 - English-only website content
 - Approved About positioning
-- Navy and white identity with optional restrained muted gold
+- Approved five-service catalogue
+- Approved Areas of Work content
+- Deep navy, parliament blue, white and restrained muted gold identity
 - Planned Ankara location at Maidan in Çankaya, clearly identified as pending final office details
 
 ## Still required
 
-- Final service titles, descriptions, scope and deliverables
-- Approved Areas of Work detail
 - Approved working methodology, if one will be published
 - Corporate email address
 - Any public telephone number
@@ -25,4 +25,4 @@ The client’s written requirements are the source of truth. Do not publish infe
 - Final production and preview domains for Google Maps referrer restrictions
 - Legal and privacy content required before a contact backend is introduced
 
-A separate target-customer section and a separate differentiators or “Why Us” section are not approved and must remain unpublished.
+A separate target-customer section and a separate differentiators or “Why Us” section are not approved and must remain unpublished. Do not publish quantified savings, success rates, turnaround times, client references, certifications or assured commercial outcomes unless supplied and approved by the client.

@@ -28,6 +28,27 @@ export default function ServicesPage() {
         </Container>
       </section>
 
+      <section className="page-section page-section--muted" aria-labelledby="services-list-title">
+        <Container>
+          <div className="page-section-heading">
+            <p className="eyebrow">Approved Services</p>
+            <h2 id="services-list-title">Service focus areas for cross-border requirements.</h2>
+          </div>
+          <div className="service-detail-list">
+            {content.services.map((service, index) => (
+              <article className="service-detail-card" key={service.title}>
+                <p>{String(index + 1).padStart(2, "0")}</p>
+                <div>
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                  <p>{service.detail}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       <PageCta content={content.cta} />
     </article>
   );

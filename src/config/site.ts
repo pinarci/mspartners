@@ -3,7 +3,7 @@ import { company } from "@/config/brand";
 export const siteMetadata = {
   title: `${company.name} | ${company.slogan.replace(/\.$/, "")}`,
   titleTemplate: `%s | ${company.name}`,
-  description: "Independent local insight and practical advisory support for complex cross-border operations across Türkiye, Europe and Asia.",
+  description: "Washington-based independent global advisory for de-risking complex cross-border trade, investment and financing requirements.",
 } as const;
 
 export const pageMetadata = {
@@ -13,15 +13,15 @@ export const pageMetadata = {
   },
   about: {
     title: "About Us",
-    description: "Learn about MS Partners, its Washington State base, Ankara affiliate and independent cross-border advisory positioning.",
+    description: "Learn how MS Partners combines Washington-based accountability with local field execution and independent review.",
   },
   services: {
     title: "Services",
-    description: "MS Partners services are shaped around each engagement, with detailed information pending final client approval.",
+    description: "Financial due diligence, factory inspection, logistics optimization, trade finance advisory and in-country representation from MS Partners.",
   },
   areasOfWork: {
     title: "Areas of Work",
-    description: "Broad cross-border support shaped by local operational and commercial requirements.",
+    description: "Commercial environments where MS Partners supports cross-border trade, market entry, finance and real-sector operations.",
   },
   contact: {
     title: "Contact",

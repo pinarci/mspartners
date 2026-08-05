@@ -12,12 +12,13 @@ export function HeroSection() {
           <p className="eyebrow eyebrow--light">{hero.eyebrow}</p>
           <h1 id="hero-title">{hero.title}</h1>
           <p className="hero__lede">{hero.description}</p>
+          <p className="hero__compact-line">{hero.compactLine}</p>
         </div>
-        <div className="hero__brand" aria-hidden="true">
+        <div className="hero__brand">
           <Image
             className="hero__brand-image"
             src="/brand/brand-reference.jpeg"
-            alt=""
+            alt="MS Partners logo"
             width={1254}
             height={1254}
             priority

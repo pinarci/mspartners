@@ -26,8 +26,8 @@ corepack pnpm start
 | --- | --- |
 | `/` | Corporate overview |
 | `/about` | Client-approved company positioning |
-| `/services` | Professional placeholder pending final service approval |
-| `/areas-of-work` | Broad Areas of Work placeholder pending final approval |
+| `/services` | Approved service areas |
+| `/areas-of-work` | Approved commercial areas of work |
 | `/contact` | Contact placeholders, planned Maidan location, map and enquiry preparation |
 | `/approach` | Permanent redirect to `/areas-of-work` |
 
@@ -35,7 +35,7 @@ The shared header and footer use the centralized route list in `src/config/navig
 
 ## Client-source-of-truth policy
 
-Only information supplied or approved in writing by the client may be presented as a company fact. Inferred service catalogues, target-customer sections, differentiator lists and fixed methodologies must remain unpublished until approved. Confirmed identity is centralized in `src/config/brand.ts`; pending contact and location data is centralized in `src/config/contact.ts`.
+Only information supplied or approved in writing by the client may be presented as a company fact. Inferred target-customer sections, differentiator lists, fixed methodologies and quantified outcomes must remain unpublished until approved. Confirmed identity is centralized in `src/config/brand.ts`; pending contact and location data is centralized in `src/config/contact.ts`.
 
 ## Pending contact information
 
