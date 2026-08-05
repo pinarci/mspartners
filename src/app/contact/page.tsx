@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/pages/page-hero";
 import { Container } from "@/components/ui/container";
 import { contactConfiguration, getGoogleMapsEmbedUrl, googleMapsExternalUrl } from "@/config/contact";
+import { pageHeroImages } from "@/config/page-hero-images";
 import { pageMetadata } from "@/config/site";
 import { contactContent } from "@/content/contact";
 
@@ -20,7 +21,7 @@ export default function ContactPage() {
 
   return (
     <article className="detail-page contact-page">
-      <PageHero content={content.hero} />
+      <PageHero content={content.hero} image={pageHeroImages.contact} />
 
       <section className="page-section contact-information-section" aria-labelledby="contact-information-title">
         <Container>

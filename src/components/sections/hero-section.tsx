@@ -1,12 +1,25 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { TextLink } from "@/components/ui/text-link";
+import { pageHeroImages } from "@/config/page-hero-images";
 import { homeContent } from "@/content/home";
 
 export function HeroSection() {
   const { hero } = homeContent.en;
+  const backgroundImage = pageHeroImages.about;
+
   return (
     <section className="hero" aria-labelledby="hero-title">
+      <div className="hero__background" aria-hidden="true">
+        <Image
+          src={backgroundImage.src}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectPosition: backgroundImage.objectPosition }}
+        />
+      </div>
       <Container className="hero__grid">
         <div className="hero__content">
           <p className="eyebrow eyebrow--light">{hero.eyebrow}</p>

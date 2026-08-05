@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageCta } from "@/components/pages/page-cta";
 import { PageHero } from "@/components/pages/page-hero";
 import { Container } from "@/components/ui/container";
+import { pageHeroImages } from "@/config/page-hero-images";
 import { pageMetadata } from "@/config/site";
 import { servicesPageContent } from "@/content/services";
 
@@ -16,7 +17,7 @@ export default function ServicesPage() {
 
   return (
     <article className="detail-page services-page">
-      <PageHero content={content.hero} />
+      <PageHero content={content.hero} image={pageHeroImages.services} />
 
       <section className="page-section page-section--intro" aria-labelledby="services-intro-title">
         <Container className="page-copy-grid">

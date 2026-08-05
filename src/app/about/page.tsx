@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageCta } from "@/components/pages/page-cta";
 import { PageHero } from "@/components/pages/page-hero";
 import { Container } from "@/components/ui/container";
+import { pageHeroImages } from "@/config/page-hero-images";
 import { pageMetadata } from "@/config/site";
 import { aboutContent } from "@/content/about";
 
@@ -16,7 +17,7 @@ export default function AboutPage() {
 
   return (
     <article className="detail-page about-page">
-      <PageHero content={content.hero} />
+      <PageHero content={content.hero} image={pageHeroImages.about} />
 
       <section className="page-section" aria-labelledby="about-purpose-title">
         <Container className="page-copy-grid">

@@ -27,6 +27,12 @@ export interface PageHeroContent {
   summary: string;
 }
 
+export interface PageHeroImage {
+  src: string;
+  objectPosition?: string;
+  overlayStrength?: "standard" | "strong";
+}
+
 export interface PageCtaContent {
   eyebrow: string;
   title: string;
