@@ -387,8 +387,8 @@ main section[id] { scroll-margin-top: var(--header-offset); }
   .container { width: min(calc(100% - 2rem), var(--container-width)); }
   .site-header__inner { min-height: var(--header-height); }
   .wordmark { font-size: 0.96rem; }
-  .hero__grid { min-height: 26rem; padding-block: 3rem; grid-template-columns: 1fr; }
-  .hero__brand { display: none; }
+  .hero__grid { min-height: 26rem; padding-block: clamp(2.5rem, 9vw, 3rem); grid-template-columns: 1fr; gap: 1.5rem; }
+  .hero__brand { width: clamp(8rem, 36vw, 9.5rem); justify-self: center; margin-top: 0.25rem; }
   .hero h1 { font-size: clamp(2.65rem, 11.5vw, 3.3rem); line-height: 1; }
   .hero__actions, .text-link--primary, .text-link--secondary { width: 100%; }
   .section-heading h2, .contact-cta h2, .state-page h1 { font-size: clamp(2.05rem, 9vw, 2.65rem); }

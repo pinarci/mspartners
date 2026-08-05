@@ -25,7 +25,7 @@ export function HeroSection() {
             width={1254}
             height={1254}
             priority
-            sizes="(max-width: 680px) 0px, (max-width: 920px) 12rem, (max-width: 1200px) 28vw, 24rem"
+            sizes="(max-width: 680px) 9.5rem, (max-width: 920px) 12rem, (max-width: 1200px) 28vw, 24rem"
           />
         </div>
       </Container>
