@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { company, wordmark } from "@/config/brand";
-import { headerAction, primaryNavigation } from "@/config/navigation";
+import { headerAction, headerNavigation } from "@/config/navigation";
 
 interface MobileNavigationProps {
   activePath: string;
@@ -72,7 +72,7 @@ export function MobileNavigation({ activePath }: MobileNavigationProps) {
             </p>
             <nav aria-label="Mobile navigation">
               <ul>
-                {primaryNavigation.map((item, index) => {
+                {headerNavigation.map((item, index) => {
                   const isActive = item.href === activePath;
                   return (
                     <li key={item.href}>
@@ -90,7 +90,12 @@ export function MobileNavigation({ activePath }: MobileNavigationProps) {
                 })}
               </ul>
             </nav>
-            <Link className="mobile-menu__cta" href={headerAction.href} onClick={() => closeMenu()}>
+            <Link
+              className="mobile-menu__cta"
+              href={headerAction.href}
+              aria-current={activePath === headerAction.href ? "page" : undefined}
+              onClick={() => closeMenu()}
+            >
               {headerAction.label}
             </Link>
             <p className="mobile-menu__tagline">{company.slogan}</p>

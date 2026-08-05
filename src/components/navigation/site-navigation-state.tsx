@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { MobileNavigation } from "@/components/layout/mobile-navigation";
-import { headerAction, primaryNavigation } from "@/config/navigation";
+import { headerAction, headerNavigation } from "@/config/navigation";
 
 export function SiteNavigationState() {
   const pathname = usePathname();
@@ -44,7 +44,7 @@ export function SiteNavigationState() {
       <div className="desktop-header">
         <nav aria-label="Primary navigation">
           <ul className="site-nav">
-            {primaryNavigation.map((item) => {
+            {headerNavigation.map((item) => {
               const isActive = pathname === item.href;
               return (
                 <li key={item.href}>
@@ -56,7 +56,13 @@ export function SiteNavigationState() {
             })}
           </ul>
         </nav>
-        <Link className="header-cta" href={headerAction.href}>{headerAction.label}</Link>
+        <Link
+          className="header-cta"
+          href={headerAction.href}
+          aria-current={pathname === headerAction.href ? "page" : undefined}
+        >
+          {headerAction.label}
+        </Link>
       </div>
       <MobileNavigation key={pathname} activePath={pathname} />
       <span className="scroll-progress" aria-hidden="true"><span ref={progressRef} /></span>

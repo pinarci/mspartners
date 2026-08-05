@@ -8,6 +8,8 @@ export const primaryNavigation: RouteNavigationItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
+export const headerNavigation: RouteNavigationItem[] = primaryNavigation.filter((item) => item.href !== "/contact");
+
 export const headerAction = {
   label: "Contact Us",
   href: "/contact",
