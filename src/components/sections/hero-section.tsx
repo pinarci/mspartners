@@ -12,10 +12,6 @@ export function HeroSection() {
           <p className="eyebrow eyebrow--light">{hero.eyebrow}</p>
           <h1 id="hero-title">{hero.title}</h1>
           <p className="hero__lede">{hero.description}</p>
-          <div className="hero__actions">
-            <TextLink href={hero.primaryAction.href} variant="primary">{hero.primaryAction.label}</TextLink>
-            <TextLink href={hero.secondaryAction.href} variant="secondary">{hero.secondaryAction.label}</TextLink>
-          </div>
         </div>
         <div className="hero__brand" aria-hidden="true">
           <Image
@@ -27,6 +23,10 @@ export function HeroSection() {
             priority
             sizes="(max-width: 680px) 9.5rem, (max-width: 920px) 12rem, (max-width: 1200px) 28vw, 24rem"
           />
+        </div>
+        <div className="hero__actions">
+          <TextLink href={hero.primaryAction.href} variant="primary">{hero.primaryAction.label}</TextLink>
+          <TextLink href={hero.secondaryAction.href} variant="secondary">{hero.secondaryAction.label}</TextLink>
         </div>
       </Container>
     </section>
