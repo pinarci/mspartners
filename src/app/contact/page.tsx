@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/pages/page-hero";
 import { Container } from "@/components/ui/container";
-import { contactConfiguration, getGoogleMapsEmbedUrl, googleMapsExternalUrl } from "@/config/contact";
+import { contactConfiguration, getCorporateEmailUrl, getGoogleMapsEmbedUrl, googleMapsExternalUrl } from "@/config/contact";
 import { pageHeroImages } from "@/config/page-hero-images";
 import { pageMetadata } from "@/config/site";
 import { contactContent } from "@/content/contact";
@@ -33,7 +33,7 @@ export default function ContactPage() {
             <article>
               <h3>{content.information.email.label}</h3>
               {corporateEmail ? (
-                <a className="contact-information-value" href={`mailto:${corporateEmail}`}>{corporateEmail}</a>
+                <a className="contact-information-value" href={getCorporateEmailUrl(corporateEmail)}>{corporateEmail}</a>
               ) : (
                 <p className="contact-information-value">{content.information.email.pendingValue}</p>
               )}

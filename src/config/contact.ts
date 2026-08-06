@@ -27,3 +27,29 @@ export function getGoogleMapsEmbedUrl() {
 }
 
 export const googleMapsExternalUrl = contactConfiguration.mapShareUrl;
+
+const emailSubject = "Cross-Border Advisory Enquiry";
+
+const emailBody = `Hello MS Partners,
+
+Company:
+Name and Position:
+Country / Relevant Market:
+Nature of Requirement:
+Commercial Objective:
+Key Concerns:
+Preferred Contact Method:
+Preferred Contact Time:
+
+Additional Information:
+
+Kind regards,`;
+
+export function getCorporateEmailUrl(emailAddress: string) {
+  const params = new URLSearchParams({
+    subject: emailSubject,
+    body: emailBody,
+  });
+
+  return `mailto:${emailAddress}?${params.toString()}`;
+}
