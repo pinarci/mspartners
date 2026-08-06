@@ -40,12 +40,14 @@ export default function ContactPage() {
               {corporateEmail ? null : <p>{content.information.email.supportingText}</p>}
             </article>
             <article>
-              <h3>{content.information.ankara.label}</h3>
+              {content.information.ankara.label ? <h3>{content.information.ankara.label}</h3> : null}
               <address>
                 <strong>{content.information.ankara.building}</strong>
                 {content.information.ankara.address.map((line) => <span key={line}>{line}</span>)}
               </address>
-              <p>{contactConfiguration.ankaraOfficeDetails ?? content.information.ankara.statusNote}</p>
+              {contactConfiguration.ankaraOfficeDetails || content.information.ankara.statusNote ? (
+                <p>{contactConfiguration.ankaraOfficeDetails ?? content.information.ankara.statusNote}</p>
+              ) : null}
             </article>
           </div>
         </Container>
@@ -67,7 +69,7 @@ export default function ContactPage() {
             />
           </div>
           <div className="contact-map-meta">
-            <p className="contact-map-note">{content.map.note}</p>
+            {content.map.note ? <p className="contact-map-note">{content.map.note}</p> : null}
             <a href={googleMapsExternalUrl} target="_blank" rel="noopener noreferrer">
               {content.map.linkLabel}<span aria-hidden="true">↗</span>
             </a>

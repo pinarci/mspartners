@@ -16,10 +16,10 @@ const englishContact = {
       supportingText: "The corporate email address will be added when available.",
     },
     ankara: {
-      label: "Planned Ankara Office Location",
+      label: "",
       building: contactConfiguration.ankaraBuildingName,
       address: contactConfiguration.ankaraBuildingAddress,
-      statusNote: "Virtual-office and unit details remain subject to final confirmation.",
+      statusNote: "",
     },
   },
   map: {
@@ -27,7 +27,7 @@ const englishContact = {
     title: "Maidan in Çankaya, Ankara.",
     iframeTitle: "Map showing Maidan İş ve Yaşam Merkezi in Ankara",
     linkLabel: "View Maidan on Google Maps",
-    note: "Map indicates the Maidan complex. Final MS Partners office details remain subject to confirmation.",
+    note: "",
   },
   preparation: {
     eyebrow: "Enquiry preparation",
