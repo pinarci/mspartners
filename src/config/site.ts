@@ -3,7 +3,7 @@ import { company } from "@/config/brand";
 export const siteMetadata = {
   title: `${company.name} | ${company.slogan.replace(/\.$/, "")}`,
   titleTemplate: `%s | ${company.name}`,
-  description: "Washington-based independent global advisory for de-risking complex cross-border trade, investment and financing requirements.",
+  description: "Washington, DC-based independent global advisory for de-risking complex cross-border trade, investment and financing requirements.",
 } as const;
 
 export const pageMetadata = {
@@ -13,7 +13,7 @@ export const pageMetadata = {
   },
   about: {
     title: "About Us",
-    description: "Learn how MS Partners combines Washington-based accountability with local field execution and independent review.",
+    description: "Learn how MS Partners combines Washington, DC-based accountability with local field execution and independent review.",
   },
   services: {
     title: "Services",

@@ -5,21 +5,21 @@ import type { LocalizedContent } from "@/types/content";
 
 const englishHome = {
   hero: {
-    eyebrow: "Washington-Based Independent Global Advisory",
+    eyebrow: "Washington, DC-Based Independent Global Advisory",
     title: company.slogan,
-    description: "MS Partners combines Washington-based corporate responsibility with on-the-ground execution to turn complex international trade, investment and financing requirements into clear, secure and sustainable solutions.",
+    description: "MS Partners combines Washington, DC-based corporate responsibility with on-the-ground execution to turn complex international trade, investment and financing requirements into clear, secure and sustainable solutions.",
     compactLine: "Your on-the-ground partner for complex cross-border operations.",
     primaryAction: { label: "About MS Partners", href: "/about" },
     secondaryAction: { label: "Contact Us", href: "/contact" },
   },
   introduction: {
     eyebrow: "Company Positioning",
-    title: "Washington accountability with practical field execution.",
+    title: "Washington, DC-based accountability with practical field execution.",
     body: [
-      "MS Partners is a Washington-based independent global advisory firm established to transform complex international trade processes into clear, secure and sustainable solutions.",
-      "The firm combines Washington-based corporate responsibility with local execution in developing sourcing and commercial centres, helping clients coordinate cross-border requirements without the immediate need to establish a local entity in each market.",
+      "MS Partners is a Washington, DC-based independent global advisory company established to transform complex international trade processes into clear, secure and sustainable solutions.",
+      "The company combines Washington, DC-based corporate responsibility with local execution in developing sourcing and commercial centers, helping clients coordinate cross-border requirements without the immediate need to establish a local entity in each market.",
     ],
-    principle: "Washington-based accountability. Local field execution. Independent review.",
+    principle: "Washington, DC-based accountability. Local field execution. Independent review.",
     action: { label: "Learn About MS Partners", href: "/about" },
   },
   trustPillars: {
@@ -27,8 +27,8 @@ const englishHome = {
     title: "A disciplined structure for cross-border engagement.",
     items: [
       {
-        title: "Washington-Based Framework",
-        description: "A Washington-based corporate structure supporting clear responsibility and cross-border engagement.",
+        title: "Washington, DC-Based Framework",
+        description: "A Washington, DC-based corporate structure supporting clear responsibility and cross-border engagement.",
       },
       {
         title: "On-the-Ground Execution",
@@ -49,8 +49,8 @@ const englishHome = {
   },
   operatingModel: {
     eyebrow: "Operating Model",
-    title: "Washington-based responsibility. Local execution where it matters.",
-    body: "Our structure combines a Washington-based corporate platform with local coordination and field capability in Türkiye and relevant international markets. This allows clients to address cross-border requirements through one coordinated relationship rather than establishing an immediate local presence in every jurisdiction.",
+    title: "Washington, DC-based responsibility. Local execution where it matters.",
+    body: "Our structure combines a Washington, DC-based corporate platform with local coordination and field capability in Türkiye and relevant international markets. This allows clients to address cross-border requirements through one coordinated relationship rather than establishing an immediate local presence in every jurisdiction.",
     entities: company.legalEntities,
   },
   areasOfWork: {

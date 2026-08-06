@@ -4,11 +4,11 @@ export const company: CompanyIdentity = {
   name: "MS Partners",
   slogan: "De-Risking Cross-Border Operations.",
   legalEntities: [
-    { name: "MS Partners LLC", location: "Washington State, United States" },
+    { name: "MS Partners LLC", location: "Washington, DC, United States" },
     { name: "MS Partners Ltd. Şti.", location: "Ankara, Türkiye" },
   ],
   geographicPositioning: {
-    base: "Washington State, United States",
+    base: "Washington, DC, United States",
     affiliate: "Ankara, Türkiye",
     operatingRegions: ["Türkiye", "Europe", "Asia"],
   },

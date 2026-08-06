@@ -17,7 +17,7 @@ export const serviceAreas = [
     detail: "Commercial review of routes, carriers and freight structures when timing, resilience or operating cost require a more practical logistics path.",
   },
   {
-    title: "Trade Finance & Credit Advisory",
+    title: "Trade, Finance & Credit Advisory",
     description: "Supporting the assessment, coordination and structuring of cross-border financing and credit requirements.",
     detail: "Coordination and commercial assessment for financing structures, credit requirements and financial counterparties in cross-border activity.",
   },

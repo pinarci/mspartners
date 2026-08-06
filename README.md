@@ -28,23 +28,23 @@ corepack pnpm start
 | `/about` | Client-approved company positioning |
 | `/services` | Approved service areas |
 | `/areas-of-work` | Approved commercial areas of work |
-| `/contact` | Contact placeholders, planned Maidan location, map and enquiry preparation |
+| `/contact` | Corporate email, planned Maidan location, map and enquiry preparation |
 | `/approach` | Permanent redirect to `/areas-of-work` |
 
 The shared header and footer use the centralized route list in `src/config/navigation.ts`. Active navigation uses `aria-current="page"`; the accessible mobile menu and scroll-progress indicator remain shared across routes.
 
 ## Client-source-of-truth policy
 
-Only information supplied or approved in writing by the client may be presented as a company fact. Inferred target-customer sections, differentiator lists, fixed methodologies and quantified outcomes must remain unpublished until approved. Confirmed identity is centralized in `src/config/brand.ts`; pending contact and location data is centralized in `src/config/contact.ts`.
+Only information supplied or approved in writing by the client may be presented as a company fact. Inferred target-customer sections, differentiator lists, fixed methodologies and quantified outcomes must remain unpublished until approved. Confirmed identity is centralized in `src/config/brand.ts`; contact and location data is centralized in `src/config/contact.ts`.
 
-## Pending contact information
+## Contact information
 
-The corporate email is intentionally stored as `null` with a `pending` status. The Contact page displays “Pending confirmation” without creating a `mailto:` link.
+The temporary approved corporate email is stored in `src/config/contact.ts`. The Contact page displays it as a `mailto:` link.
 
-When the corporate email is confirmed:
+When the future corporate-domain email is active:
 
 1. Set `corporateEmail` in `src/config/contact.ts` to the approved address.
-2. Change `corporateEmailStatus` to `"confirmed"`.
+2. Keep `corporateEmailStatus` as `"confirmed"`.
 3. Run lint, type-check and build. The existing Contact component will render the address as a `mailto:` link.
 
 The Maidan building address identifies only the planned Ankara location. Virtual-office and unit details remain `null` and are not described as a registered or correspondence address. When approved, add only the confirmed detail to `ankaraOfficeDetails` in `src/config/contact.ts`, and update the building/address fields only if the client confirms a different public location.
@@ -75,4 +75,4 @@ No Maps JavaScript package or consent-management dependency is used in this phas
 - Public page copy: `src/content/`
 - Design tokens and responsive presentation: `src/app/globals.css`
 
-There is no contact backend, final email, confirmed office unit, legal page, analytics integration or production-domain configuration in the repository.
+There is no contact backend, corporate-domain email, confirmed office unit, legal page, analytics integration or production-domain configuration in the repository.

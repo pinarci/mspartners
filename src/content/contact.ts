@@ -12,8 +12,8 @@ const englishContact = {
     title: "Current contact details.",
     email: {
       label: "Corporate Email",
-      pendingValue: "Pending confirmation",
-      supportingText: "The official corporate email address will be added following confirmation.",
+      pendingValue: "Email unavailable",
+      supportingText: "The corporate email address will be added when available.",
     },
     ankara: {
       label: "Planned Ankara Office Location",

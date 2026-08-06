@@ -51,7 +51,7 @@ export interface ContactConfiguration {
   phone: string | null;
   washingtonAddress: string | null;
   ankaraBuildingName: string;
-  ankaraBuildingAddress: readonly [string, string];
+  ankaraBuildingAddress: readonly string[];
   ankaraOfficeDetails: string | null;
   mapPlaceQuery: string;
   mapShareUrl: string;

@@ -5,7 +5,7 @@ The client’s written requirements are the source of truth. Do not publish infe
 ## Confirmed for public use
 
 - MS Partners
-- MS Partners LLC — Washington State, United States
+- MS Partners LLC — Washington, DC, United States
 - MS Partners Ltd. Şti. — Ankara, Türkiye
 - “De-Risking Cross-Border Operations.”
 - English-only website content
@@ -18,7 +18,6 @@ The client’s written requirements are the source of truth. Do not publish infe
 ## Still required
 
 - Approved working methodology, if one will be published
-- Corporate email address
 - Any public telephone number
 - Confirmed Ankara virtual-office and unit details
 - Confirmation of any address intended as a registered or correspondence address

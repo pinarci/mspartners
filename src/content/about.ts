@@ -7,15 +7,15 @@ const turkiyeEntity = company.legalEntities[1];
 const englishAbout = {
   hero: {
     eyebrow: "About MS Partners",
-    title: "Washington-based accountability. Local field execution. Independent review.",
-    summary: `MS Partners combines a Washington-based corporate platform with practical local coordination through ${turkiyeEntity.name} in Ankara and field capability across relevant markets.`,
+    title: "Washington, DC-based accountability. Local field execution. Independent review.",
+    summary: `MS Partners combines a Washington, DC-based corporate platform with practical local coordination through ${turkiyeEntity.name} in Ankara and field capability across relevant markets.`,
   } satisfies PageHeroContent,
   purpose: {
     eyebrow: "Company Positioning",
     title: "Built to de-risk cross-border operations.",
     body: [
-      "MS Partners is a Washington-based independent global advisory firm established to transform complex international trade processes into clear, secure and sustainable solutions. We bring together the decades of public- and private-sector experience of team leaders who have held senior roles across international trade, investment, banking, finance and the real economy in a broad range of markets.",
-      "Guided by a vision of removing blind spots across the supply chain, our operating model combines Washington-based corporate responsibility with local execution in developing sourcing and commercial centres. As an independent partner aligned with our clients’ long-term success, we support requirements ranging from financial due diligence and factory inspection to alternative logistics optimization and cross-border financing structures.",
+      "MS Partners is a Washington, DC-based independent global advisory company established to transform complex international trade processes into clear, secure and sustainable solutions. We bring together the decades of public- and private-sector experience of team leaders who have held senior roles across international trade, investment, banking, finance and the real economy in a broad range of markets.",
+      "Guided by a vision of removing blind spots across the supply chain, our operating model combines Washington, DC-based corporate responsibility with local execution in developing sourcing and commercial centers. As an independent partner aligned with our clients’ long-term success, we support requirements ranging from financial due diligence and factory inspection to alternative logistics optimization and cross-border financing structures.",
       "MS Partners enables clients to manage cross-border requirements without the immediate need to establish a local entity or branch in each market. We coordinate operational and legal workstreams through local expertise and qualified professional networks, bringing global perspective together with practical field execution. Our approach is grounded in commercial judgement, transparency and respect for human values.",
     ],
   },
@@ -24,8 +24,8 @@ const englishAbout = {
     title: "Three anchors shape the way MS Partners works.",
     items: [
       {
-        title: "Washington-Based Framework",
-        description: "A Washington-based corporate structure supporting clear responsibility and cross-border engagement.",
+        title: "Washington, DC-Based Framework",
+        description: "A Washington, DC-based corporate structure supporting clear responsibility and cross-border engagement.",
       },
       {
         title: "On-the-Ground Execution",
@@ -39,7 +39,7 @@ const englishAbout = {
   },
   operatingModel: {
     eyebrow: "Operating Model",
-    title: "A coordinated relationship from Washington to the field.",
+    title: "A coordinated relationship from Washington, DC to the field.",
     body: `The MS Partners structure brings together ${washingtonEntity.name} in ${washingtonEntity.location}, ${turkiyeEntity.name} in ${turkiyeEntity.location}, and local field capability across relevant markets. Clients can address cross-border requirements through one coordinated relationship rather than establishing an immediate local presence in every jurisdiction.`,
   },
   cta: {
