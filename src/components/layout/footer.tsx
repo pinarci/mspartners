@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { company } from "@/config/brand";
+import { contactConfiguration } from "@/config/contact";
 import { primaryNavigation } from "@/config/navigation";
 
 export function Footer() {
@@ -24,6 +25,16 @@ export function Footer() {
             <ul className="footer-nav">
               {primaryNavigation.map((item) => <li key={item.href}><Link href={item.href}>{item.label}</Link></li>)}
             </ul>
+            <a
+              className="social-link footer-social-link"
+              href={contactConfiguration.linkedInUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="MS Partners on LinkedIn"
+            >
+              <span aria-hidden="true">in</span>
+              LinkedIn
+            </a>
           </nav>
         </div>
         <div className="site-footer__bottom">

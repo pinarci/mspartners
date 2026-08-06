@@ -5,6 +5,7 @@ const googleMapsEmbedApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_API_KEY?
 export const contactConfiguration: ContactConfiguration = {
   corporateEmail: "mspartnersus@gmail.com",
   corporateEmailStatus: "confirmed",
+  linkedInUrl: "https://www.linkedin.com/company/mspartnersglobal/",
   phone: null,
   washingtonAddress: null,
   ankaraBuildingName: "Maidan İş ve Yaşam Merkezi",

@@ -38,6 +38,16 @@ export default function ContactPage() {
                 <p className="contact-information-value">{content.information.email.pendingValue}</p>
               )}
               {corporateEmail ? null : <p>{content.information.email.supportingText}</p>}
+              <a
+                className="social-link contact-social-link"
+                href={contactConfiguration.linkedInUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MS Partners on LinkedIn"
+              >
+                <span aria-hidden="true">in</span>
+                MS Partners on LinkedIn
+              </a>
             </article>
             <article>
               {content.information.ankara.label ? <h3>{content.information.ankara.label}</h3> : null}

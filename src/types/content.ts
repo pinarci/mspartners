@@ -48,6 +48,7 @@ export type ContactFieldStatus = "pending" | "confirmed";
 export interface ContactConfiguration {
   corporateEmail: string | null;
   corporateEmailStatus: ContactFieldStatus;
+  linkedInUrl: string;
   phone: string | null;
   washingtonAddress: string | null;
   ankaraBuildingName: string;
