@@ -46,10 +46,8 @@ Additional Information:
 Kind regards,`;
 
 export function getCorporateEmailUrl(emailAddress: string) {
-  const params = new URLSearchParams({
-    subject: emailSubject,
-    body: emailBody,
-  });
+  const encodedSubject = encodeURIComponent(emailSubject);
+  const encodedBody = encodeURIComponent(emailBody);
 
-  return `mailto:${emailAddress}?${params.toString()}`;
+  return `mailto:${emailAddress}?subject=${encodedSubject}&body=${encodedBody}`;
 }
