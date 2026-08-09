@@ -29,7 +29,7 @@ export function getGoogleMapsEmbedUrl() {
 
 export const googleMapsExternalUrl = contactConfiguration.mapShareUrl;
 
-const emailSubject = "Cross-Border Advisory Enquiry";
+const emailSubject = "Cross-Border Advisory Inquiry";
 
 const emailBody = `Hello MS Partners,
 

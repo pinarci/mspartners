@@ -30,7 +30,7 @@ const englishContact = {
     note: "",
   },
   preparation: {
-    eyebrow: "Enquiry preparation",
+    eyebrow: "Inquiry preparation",
     title: "Information to prepare for an initial discussion.",
     introduction: "No information is collected through this website.",
     prompts: [
