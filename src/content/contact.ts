@@ -5,7 +5,7 @@ const englishContact = {
   hero: {
     eyebrow: "Contact",
     title: "Contact MS Partners.",
-    summary: "Corporate contact information, the planned Ankara location and concise enquiry-preparation guidance.",
+    summary: "Corporate contact information, the planned Ankara location and concise inquiry-preparation guidance.",
   } satisfies PageHeroContent,
   information: {
     eyebrow: "Contact Information",

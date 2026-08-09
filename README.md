@@ -28,7 +28,7 @@ corepack pnpm start
 | `/about` | Client-approved company positioning |
 | `/services` | Approved service areas |
 | `/areas-of-work` | Approved commercial areas of work |
-| `/contact` | Corporate email, planned Maidan location, map and enquiry preparation |
+| `/contact` | Corporate email, planned Maidan location, map and inquiry preparation |
 | `/approach` | Permanent redirect to `/areas-of-work` |
 
 The shared header and footer use the centralized route list in `src/config/navigation.ts`. Active navigation uses `aria-current="page"`; the accessible mobile menu and scroll-progress indicator remain shared across routes.

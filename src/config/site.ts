@@ -25,6 +25,6 @@ export const pageMetadata = {
   },
   contact: {
     title: "Contact",
-    description: "Contact information and enquiry preparation for MS Partners, including the planned Maidan location in Ankara.",
+    description: "Contact information and inquiry preparation for MS Partners, including the planned Maidan location in Ankara.",
   },
 } as const;
