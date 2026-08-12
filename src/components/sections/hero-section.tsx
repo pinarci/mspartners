@@ -30,7 +30,7 @@ export function HeroSection() {
         <div className="hero__brand">
           <Image
             className="hero__brand-image"
-            src="/brand/brand-reference.jpeg"
+            src="/brand/newlogo.png"
             alt="MS Partners logo"
             width={1254}
             height={1254}
