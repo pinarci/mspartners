@@ -30,12 +30,12 @@ export function HeroSection() {
         <div className="hero__brand">
           <Image
             className="hero__brand-image"
-            src="/brand/newlogo.png"
+            src="/brand/translogo.png"
             alt="MS Partners logo"
-            width={1254}
-            height={1254}
+            width={1024}
+            height={1536}
             priority
-            sizes="(max-width: 680px) 9.5rem, (max-width: 920px) 12rem, (max-width: 1200px) 28vw, 24rem"
+            sizes="(max-width: 680px) 7.5rem, (max-width: 920px) 9rem, (max-width: 1200px) 18vw, 13rem"
           />
         </div>
         <div className="hero__actions">

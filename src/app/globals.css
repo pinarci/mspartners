@@ -284,7 +284,7 @@ main section[id] { scroll-margin-top: var(--header-offset); }
 .hero__brand {
   grid-area: brand;
   width: 100%;
-  max-width: 19rem;
+  max-width: 13rem;
   justify-self: end;
   overflow: hidden;
 }
@@ -583,7 +583,7 @@ a.contact-information-value:hover {
   .hero__content { align-self: auto; }
   .hero__lede { margin-bottom: 0; }
   .hero__compact-line { margin-top: 0.8rem; margin-bottom: 0; }
-  .hero__brand { width: clamp(8rem, 36vw, 9.5rem); justify-self: center; margin-top: 0.25rem; }
+  .hero__brand { width: clamp(6.25rem, 28vw, 7.5rem); justify-self: center; margin-top: 0.25rem; }
   .hero h1 { font-size: clamp(2.65rem, 11.5vw, 3.3rem); line-height: 1; }
   .hero__actions, .text-link--primary, .text-link--secondary { width: 100%; }
   .section-heading h2, .contact-cta h2, .state-page h1 { font-size: clamp(2.05rem, 9vw, 2.65rem); }
