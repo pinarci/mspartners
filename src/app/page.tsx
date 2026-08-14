@@ -1,5 +1,6 @@
 import { ContactCtaSection } from "@/components/sections/contact-cta-section";
 import { AreasOfWorkSection } from "@/components/sections/areas-of-work-section";
+import { CompanyVideoSection } from "@/components/sections/company-video-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { IntroductionSection } from "@/components/sections/introduction-section";
 import { OperatingModelSection } from "@/components/sections/operating-model-section";
@@ -19,6 +20,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <IntroductionSection />
+      <CompanyVideoSection />
       <TrustPillarsSection />
       <ServicesSection />
       <OperatingModelSection />
