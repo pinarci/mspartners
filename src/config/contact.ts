@@ -3,7 +3,7 @@ import type { ContactConfiguration } from "@/types/content";
 const googleMapsEmbedApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_API_KEY?.trim() || null;
 
 export const contactConfiguration: ContactConfiguration = {
-  corporateEmail: "mspartnersus@gmail.com",
+  corporateEmail: "info@mspartnersus.com",
   corporateEmailStatus: "confirmed",
   linkedInUrl: "https://www.linkedin.com/company/mspartnersglobal/",
   phone: null,
