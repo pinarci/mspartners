@@ -50,6 +50,31 @@ export default function ServicesPage() {
         </Container>
       </section>
 
+      <section className="page-section service-video-showcase" aria-labelledby="integrity-testing-title">
+        <Container className="service-video-showcase__grid">
+          <div className="service-video-showcase__copy">
+            <p className="eyebrow">Featured Capability</p>
+            <h2 id="integrity-testing-title">Geomembrane Integrity Testing</h2>
+            <p>
+              See how MS Partners approaches field testing, defect detection and integrity verification
+              across exposed and covered geomembrane systems.
+            </p>
+          </div>
+          <div className="service-video-showcase__media">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster="/media/geomembrane-integrity-testing-poster.jpg"
+              aria-label="MS Partners geomembrane integrity testing video"
+            >
+              <source src="/media/geomembrane-integrity-testing.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+          </div>
+        </Container>
+      </section>
+
       <PageCta content={content.cta} />
     </article>
   );
