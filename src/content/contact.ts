@@ -15,6 +15,11 @@ const englishContact = {
       pendingValue: "Email unavailable",
       supportingText: "The corporate email address will be added when available.",
     },
+    whatsapp: {
+      label: "WhatsApp",
+      actionLabel: "Message us on WhatsApp",
+      supportingText: "Start a direct conversation with our team.",
+    },
     ankara: {
       label: "",
       building: contactConfiguration.ankaraBuildingName,

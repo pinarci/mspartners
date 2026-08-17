@@ -4,10 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { MobileNavigation } from "@/components/layout/mobile-navigation";
+import { getWhatsAppUrl } from "@/config/contact";
 import { headerAction, headerNavigation } from "@/config/navigation";
 
 export function SiteNavigationState() {
   const pathname = usePathname();
+  const whatsappUrl = getWhatsAppUrl();
   const progressRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -56,6 +58,17 @@ export function SiteNavigationState() {
             })}
           </ul>
         </nav>
+        {whatsappUrl ? (
+          <a
+            className="header-whatsapp"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Message MS Partners on WhatsApp (opens in a new tab)"
+          >
+            WhatsApp
+          </a>
+        ) : null}
         <Link
           className="header-cta"
           href={headerAction.href}

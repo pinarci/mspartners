@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { company, wordmark } from "@/config/brand";
+import { getWhatsAppUrl } from "@/config/contact";
 import { headerAction, headerNavigation } from "@/config/navigation";
 
 interface MobileNavigationProps {
@@ -10,6 +11,7 @@ interface MobileNavigationProps {
 }
 
 export function MobileNavigation({ activePath }: MobileNavigationProps) {
+  const whatsappUrl = getWhatsAppUrl();
   const [isOpen, setIsOpen] = useState(false);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
@@ -98,6 +100,18 @@ export function MobileNavigation({ activePath }: MobileNavigationProps) {
             >
               {headerAction.label}
             </Link>
+            {whatsappUrl ? (
+              <a
+                className="mobile-menu__whatsapp"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Message MS Partners on WhatsApp (opens in a new tab)"
+                onClick={() => closeMenu()}
+              >
+                WhatsApp
+              </a>
+            ) : null}
             <p className="mobile-menu__tagline">{company.slogan}</p>
           </div>
         </div>

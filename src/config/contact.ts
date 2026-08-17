@@ -6,7 +6,7 @@ export const contactConfiguration: ContactConfiguration = {
   corporateEmail: "info@mspartnersus.com",
   corporateEmailStatus: "confirmed",
   linkedInUrl: "https://www.linkedin.com/company/mspartnersglobal/",
-  phone: null,
+  phone: "+1 (571) 250-9899",
   washingtonAddress: null,
   ankaraBuildingName: "Maidan İş ve Yaşam Merkezi",
   ankaraBuildingAddress: [
@@ -20,6 +20,15 @@ export const contactConfiguration: ContactConfiguration = {
   mapPreviewEmbedUrl: "https://www.google.com/maps?q=39.9095739%2C32.7645597&z=17&output=embed",
   mapEmbedApiKeyAvailable: googleMapsEmbedApiKey !== null,
 };
+
+const whatsappMessage = "Hello MS Partners, I would like to discuss a potential engagement.";
+
+export function getWhatsAppUrl() {
+  if (!contactConfiguration.phone) return null;
+
+  const internationalNumber = contactConfiguration.phone.replace(/\D/g, "");
+  return `https://wa.me/${internationalNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+}
 
 export function getGoogleMapsEmbedUrl() {
   if (!googleMapsEmbedApiKey) return contactConfiguration.mapPreviewEmbedUrl;

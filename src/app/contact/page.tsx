@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/pages/page-hero";
 import { Container } from "@/components/ui/container";
-import { contactConfiguration, getCorporateEmailUrl, getGoogleMapsEmbedUrl, googleMapsExternalUrl } from "@/config/contact";
+import { contactConfiguration, getCorporateEmailUrl, getGoogleMapsEmbedUrl, getWhatsAppUrl, googleMapsExternalUrl } from "@/config/contact";
 import { pageHeroImages } from "@/config/page-hero-images";
 import { pageMetadata } from "@/config/site";
 import { contactContent } from "@/content/contact";
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   const content = contactContent.en;
   const mapEmbedUrl = getGoogleMapsEmbedUrl();
+  const whatsappUrl = getWhatsAppUrl();
   const corporateEmail = contactConfiguration.corporateEmailStatus === "confirmed"
     ? contactConfiguration.corporateEmail
     : null;
@@ -49,6 +50,22 @@ export default function ContactPage() {
                 MS Partners on LinkedIn
               </a>
             </article>
+            {whatsappUrl ? (
+              <article>
+                <h3>{content.information.whatsapp.label}</h3>
+                <a
+                  className="contact-whatsapp-action"
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Message MS Partners on WhatsApp (opens in a new tab)"
+                >
+                  <span aria-hidden="true">WA</span>
+                  {content.information.whatsapp.actionLabel}
+                </a>
+                <p>{content.information.whatsapp.supportingText}</p>
+              </article>
+            ) : null}
             <article>
               {content.information.ankara.label ? <h3>{content.information.ankara.label}</h3> : null}
               <address>
