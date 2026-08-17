@@ -119,7 +119,7 @@ export function CompanyVideoSection() {
             <video
               ref={videoRef}
               className="video-modal__video"
-              src="/media/MS.mp4"
+              src="/media/introduction.mp4"
               poster="/media/ms-partners-video-poster.jpg"
               controls
               autoPlay
