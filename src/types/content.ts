@@ -50,7 +50,7 @@ export interface ContactConfiguration {
   corporateEmailStatus: ContactFieldStatus;
   linkedInUrl: string;
   phone: string | null;
-  washingtonAddress: string | null;
+  virginiaAddress: string | null;
   ankaraBuildingName: string;
   ankaraBuildingAddress: readonly string[];
   ankaraOfficeDetails: string | null;

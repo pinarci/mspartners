@@ -7,7 +7,7 @@ export const contactConfiguration: ContactConfiguration = {
   corporateEmailStatus: "confirmed",
   linkedInUrl: "https://www.linkedin.com/company/mspartnersglobal/",
   phone: "+1 (571) 250-9899",
-  washingtonAddress: null,
+  virginiaAddress: null,
   ankaraBuildingName: "Maidan İş ve Yaşam Merkezi",
   ankaraBuildingAddress: [
     "Mustafa Kemal Mahallesi, 2118. Cadde No:4",
